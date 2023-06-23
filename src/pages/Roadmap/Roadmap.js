@@ -6,7 +6,9 @@ import SectionEachRoadMap from "../../components/Roadmap/EachRoadmap";
 const Roadmap = () => {
   return (
     <StyledComponent>
-      <TextSubject data-aos="zoom-in" data-aos-duration="1000">Roadmap</TextSubject>
+      <TextSubject data-aos="zoom-in" data-aos-duration="1000">
+        Roadmap
+      </TextSubject>
       <SectionRoadmap data-aos="fade-up" data-aos-duration="2000">
         {dataRoadmap?.map((each, index) => {
           return (
