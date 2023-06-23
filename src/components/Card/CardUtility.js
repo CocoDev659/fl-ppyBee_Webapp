@@ -3,7 +3,11 @@ import { Box } from "@mui/material";
 
 const CardUtility = ({ data }) => {
   return (
-    <StyledComponent data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
+    <StyledComponent
+      data-aos="flip-left"
+      data-aos-duration="500"
+      // data-aos-delay="300"
+    >
       <SectionIcon>
         <img src={data.icon} alt="" />
       </SectionIcon>
