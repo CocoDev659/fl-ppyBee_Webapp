@@ -40,7 +40,8 @@ const TextTitle = styled(Box)`
   font-size: 13em;
   font-family: Rowdies;
   line-height: 152.971px;
-  text-shadow: 10px 5px 0px #003d28;
+  -webkit-text-stroke: 3px #003d28;
+  text-shadow: 10px 7px 0px #003d28;
 `;
 
 const SectionButtonPlay = styled(Box)`
