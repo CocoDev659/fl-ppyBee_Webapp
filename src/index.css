@@ -47,6 +47,6 @@ code {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(50, 35, 30);
+  background-color: #00583a;
   /* border-radius: 3px; */
 }

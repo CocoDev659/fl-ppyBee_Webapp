@@ -24,7 +24,7 @@ const Footer = () => {
           })}
         </SectionLinkButtonGroup>
       </SectionLink>
-    </StyledComponent>
+    </StyledComponent> 
   );
 };
 
@@ -44,7 +44,7 @@ const TextTitle = styled(Box)`
   font-family: Rowdies;
   line-height: 94.459px;
   -webkit-text-stroke: 3px #003d28;
-  text-shadow: 5px 5px 0px rgb(0 115 75);
+  text-shadow: 5px 5px 0px #00583a;
 `;
 
 const SectionLink = styled(Box)`
