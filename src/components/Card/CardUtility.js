@@ -23,6 +23,11 @@ const StyledComponent = styled(Box)`
   border-radius: 20px;
   background: #00583a;
   align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover{
+    transform: scale(1.06);
+  }
 `;
 
 const SectionIcon = styled(Box)`

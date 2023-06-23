@@ -67,6 +67,11 @@ const SectionReward = styled(Box)`
   left: 50%;
   top: 150px;
   transform: translateX(-50%);
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0px 0px 20px white;
+  }
 `;
 
 const SectionSupply = styled(Box)`
@@ -88,6 +93,11 @@ const SectionSupply = styled(Box)`
 
   right: 60%;
   top: 370px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0px 0px 20px white;
+  }
 `;
 
 const SectionLiquidity = styled(Box)`
@@ -108,6 +118,11 @@ const SectionLiquidity = styled(Box)`
   line-height: 40px;
   left: 60%;
   top: 370px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0px 0px 20px white;
+  }
 `;
 
 const SectionFarming = styled(Box)`
@@ -127,8 +142,13 @@ const SectionFarming = styled(Box)`
   font-family: Lato;
   line-height: 40px;
 
-  right:63%;
+  right: 63%;
   top: 630px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0px 0px 20px white;
+  }
 `;
 
 const SectionEcosystem = styled(Box)`
@@ -148,8 +168,13 @@ const SectionEcosystem = styled(Box)`
   font-family: Lato;
   line-height: 40px;
 
-  left:63%;
+  left: 63%;
   top: 630px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0px 0px 20px white;
+  }
 `;
 
 export default Tokenomics;
