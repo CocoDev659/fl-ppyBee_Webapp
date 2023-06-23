@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { Box } from "@mui/material";
-import imgHomeBack from "../../assets/images/background/imgHomewithBee.svg";
+import imgHomeBack from "../../assets/images/background/imgHome.png";
 import imgButtonWide from "../../assets/images/button/wide.png";
+import imgFlyingBee from "../../assets/images/icon/flyingbeeanimation.gif";
 
 const Home = () => {
   return (
@@ -12,6 +13,15 @@ const Home = () => {
         <SectionButtonPlay>
           <ButtonPlay>Play</ButtonPlay>
         </SectionButtonPlay>
+        <IconFlyingBee01>
+          <img src={imgFlyingBee} width={"100%"} alt="" />
+        </IconFlyingBee01>
+        <IconFlyingBee02>
+          <img src={imgFlyingBee} width={"100%"} alt="" />
+        </IconFlyingBee02>
+        <IconFlyingBee03>
+          <img src={imgFlyingBee} width={"100%"} alt="" />
+        </IconFlyingBee03>
       </SectionImageHome>
     </StyledComponent>
   );
@@ -79,6 +89,34 @@ const ButtonPlay = styled(Box)`
   &:active {
     transform: scale(0.9);
   }
+`;
+
+const IconFlyingBee01 = styled(Box)`
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform: scaleX(-1);
+  width: 140px;
+`;
+
+const IconFlyingBee02 = styled(Box)`
+  display: flex;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  transform: scaleX(-1);
+  width: 110px;
+`;
+
+const IconFlyingBee03 = styled(Box)`
+  display: flex;
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: scaleX(-1);
+  width: 180px;
 `;
 
 export default Home;

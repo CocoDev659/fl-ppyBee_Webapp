@@ -6,8 +6,18 @@ import Utilities from "./pages/Utilities/Utilities";
 import Tokenomics from "./pages/Tokenomics/Tokenomics";
 import Roadmap from "./pages/Roadmap/Roadmap";
 import Footer from "./layout/Footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 3000,
+    });
+  }, []);
+
   return (
     <StyledComponent>
       <Home />

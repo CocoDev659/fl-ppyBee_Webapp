@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import { Box } from "@mui/material";
 import imgBackSky from "../../assets/images/background/backSky.png";
-import imgBee from "../../assets/images/icon/Bee01.png"
+import imgBee from "../../assets/images/icon/Bee01.png";
 
 const AboutUs = () => {
   return (
     <StyledComponent>
-      <SectionLeft>
+      <SectionLeft data-aos="fade-right" data-aos-duration="2000">
         <TextAboutUs>About us</TextAboutUs>
         <TextDescriptionEach>
           Velociraptor Athena, the Lord of Memes, is not just an iconic symbol
@@ -30,7 +30,7 @@ const AboutUs = () => {
           owner@veathena.xyz
         </TextDescriptionEach>
       </SectionLeft>
-      <SectionRight>
+      <SectionRight data-aos="fade-left" data-aos-duration="2000">
         <SectionImageBee>
           <ImageBee>
             <img src={imgBee} width={"100%"} alt="" />

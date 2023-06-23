@@ -3,10 +3,14 @@ import { Box } from "@mui/material";
 import imgTokenomics from "../../assets/images/background/backTokenomics.svg";
 
 const Tokenomics = () => {
+
   return (
     <StyledComponent>
-      <TextSubject>Tokenomics</TextSubject>
-      <ImageBackground>
+      <TextSubject data-aos="zoom-in" data-aos-duration="1000">Tokenomics</TextSubject>
+      <ImageBackground
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <img src={imgTokenomics} width={"100%"} alt="" />
         <SectionReward>Game Reward: 30%</SectionReward>
         <SectionSupply>Circulating Supply: 25%</SectionSupply>

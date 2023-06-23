@@ -6,7 +6,9 @@ import CardUtility from "../../components/Card/CardUtility";
 const Utilities = () => {
   return (
     <StyledComponent>
-      <TextSubject>Utilities</TextSubject>
+      <TextSubject data-aos="zoom-in" data-aos-duration="1000">
+        Utilities
+      </TextSubject>
       <SectionCard>
         {dataUtilities?.map((each, index) => {
           return <CardUtility data={each} key={index} />;

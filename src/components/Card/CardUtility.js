@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 
 const CardUtility = ({ data }) => {
   return (
-    <StyledComponent>
+    <StyledComponent data-aos="flip-left" data-aos-duration="1000">
       <SectionIcon>
         <img src={data.icon} alt="" />
       </SectionIcon>
@@ -25,7 +25,7 @@ const StyledComponent = styled(Box)`
   align-items: center;
   cursor: pointer;
   transition: 0.3s;
-  &:hover{
+  &:hover {
     transform: scale(1.06);
   }
 `;
