@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Box } from "@mui/material";
-import imgHomeBack from "../../assets/images/background/imgHome.png";
+import imgHomeBack from "../../assets/images/background/imgHomewithBee.svg";
 import imgButtonWide from "../../assets/images/button/wide.png";
 
 const Home = () => {
