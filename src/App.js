@@ -21,11 +21,11 @@ function App() {
   return (
     <StyledComponent>
       <Home />
-      <AboutUs />
+      {/* <AboutUs />
       <Utilities />
       <Tokenomics />
       <Roadmap />
-      <Footer />
+      <Footer /> */}
     </StyledComponent>
   );
 }

@@ -36,22 +36,37 @@ const SectionImageHome = styled(Box)`
   display: flex;
   width: 100%;
   position: relative;
+
+  > img {
+    @media (max-width: 600px) {
+      height: 600px;
+      object-fit: cover;
+      object-position: left;
+    }
+    @media (max-width: 390px) {
+      height: 844px;
+      object-fit: cover;
+      object-position: left;
+    }
+  }
 `;
 
 const TextTitle = styled(Box)`
   display: flex;
   position: absolute;
-  left: 50%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   top: 35px;
-  transform: translateX(-50%);
 
   color: #a9d100;
   text-align: center;
   font-size: 13em;
   font-family: Rowdies;
-  line-height: 152.971px;
   -webkit-text-stroke: 3px #003d28;
   text-shadow: 10px 7px 0px #003d28;
+
+  transition: 0.3s;
 `;
 
 const SectionButtonPlay = styled(Box)`
@@ -60,12 +75,23 @@ const SectionButtonPlay = styled(Box)`
   left: 50%;
   bottom: 90px;
   transform: translateX(-50%);
+
+  transition: 0.3s;
+  @media (max-width: 1024px) {
+    bottom: 70px;
+  }
+  @media (max-width: 900px) {
+    bottom: 50px;
+  }
+  @media (max-width: 390px) {
+    bottom: 70px;
+  }
 `;
 
 const ButtonPlay = styled(Box)`
   display: flex;
   width: 450px;
-  height: 125px;
+  height: 130px;
   align-items: center;
   justify-content: center;
   background-image: url(${imgButtonWide});
@@ -89,6 +115,24 @@ const ButtonPlay = styled(Box)`
   &:active {
     transform: scale(0.9);
   }
+
+  transition: 0.3s;
+  @media (max-width: 1600px) {
+    width: 400px;
+    height: 115px;
+  }
+  @media (max-width: 1440px) {
+    width: 360px;
+    height: 100px;
+  }
+  @media (max-width: 1024px) {
+    width: 300px;
+    height: 80px;
+  }
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 55px;
+  }
 `;
 
 const IconFlyingBee01 = styled(Box)`
@@ -99,6 +143,24 @@ const IconFlyingBee01 = styled(Box)`
   transform: translate(-50%, -50%);
   transform: scaleX(-1);
   width: 140px;
+
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    width: 95px;
+  }
+  @media (max-width: 1024px) {
+    width: 80px;
+  }
+  @media (max-width: 768px) {
+    width: 60px;
+  }
+  @media (max-width: 500px) {
+    left: 75%;
+    top: 60%;
+  }
+  @media (max-width: 390px) {
+    width: 80px;
+  }
 `;
 
 const IconFlyingBee02 = styled(Box)`
@@ -108,6 +170,24 @@ const IconFlyingBee02 = styled(Box)`
   top: 40%;
   transform: scaleX(-1);
   width: 110px;
+
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    width: 75px;
+  }
+  @media (max-width: 1024px) {
+    width: 60px;
+  }
+  @media (max-width: 768px) {
+    width: 45px;
+  }
+  @media (max-width: 500px) {
+    left: 50%;
+    top: 50%;
+  }
+  @media (max-width: 390px) {
+    width: 60px;
+  }
 `;
 
 const IconFlyingBee03 = styled(Box)`
@@ -117,6 +197,24 @@ const IconFlyingBee03 = styled(Box)`
   top: 50%;
   transform: scaleX(-1);
   width: 180px;
+
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    width: 110px;
+  }
+  @media (max-width: 1024px) {
+    width: 90px;
+  }
+  @media (max-width: 768px) {
+    width: 70px;
+  }
+  @media (max-width: 500px) {
+    left: 25%;
+    top: 60%;
+  }
+  @media (max-width: 390px) {
+    width: 90px;
+  }
 `;
 
 export default Home;
