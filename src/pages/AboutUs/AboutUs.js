@@ -25,9 +25,9 @@ const AboutUs = () => {
           navigate the crypto landscape with confidence and success.
         </TextDescriptionEach>
         <TextDescriptionEach>
-          CA: 0x68b3A846C00A3d97B5090B2Aefe62611A0B4A9f1Contact:
+          CA: 0x68b3A846C00A3d97B5090B2Aefe62611A0B4A9f1
           <br />
-          owner@veathena.xyz
+          Contact: owner@veathena.xyz
         </TextDescriptionEach>
       </SectionLeft>
       <SectionRight data-aos="fade-left" data-aos-duration="2000">
@@ -53,6 +53,8 @@ const StyledComponent = styled(Box)`
 
 const SectionLeft = styled(Box)`
   display: flex;
+  flex: 1;
+  width: 100%;
   flex-direction: column;
   margin-right: 150px;
 `;
@@ -74,11 +76,13 @@ const TextDescriptionEach = styled(Box)`
 
 const SectionRight = styled(Box)`
   display: flex;
+  width: 600px;
+  min-width: 600px;
 `;
 
 const SectionImageBee = styled(Box)`
   display: flex;
-  width: 600px;
+  width: 100%;
   aspect-ratio: 1;
   justify-content: center;
   align-items: center;
