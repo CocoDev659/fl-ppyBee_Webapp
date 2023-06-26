@@ -67,6 +67,19 @@ const TextTitle = styled(Box)`
   text-shadow: 10px 7px 0px #003d28;
 
   transition: 0.3s;
+
+  transition: 0.3s;
+  @media (max-width: 1024px) {
+    font-size: 80 px;
+  }
+  @media (max-width: 768px) {
+    font-size: 53px;
+  }
+  @media (max-width: 390px) {
+    font-size: 45px;
+  } 
+
+
 `;
 
 const SectionButtonPlay = styled(Box)`
@@ -132,6 +145,7 @@ const ButtonPlay = styled(Box)`
   @media (max-width: 768px) {
     width: 200px;
     height: 55px;
+    font-size: 5em;
   }
 `;
 

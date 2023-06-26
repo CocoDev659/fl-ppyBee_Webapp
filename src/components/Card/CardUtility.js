@@ -32,6 +32,13 @@ const StyledComponent = styled(Box)`
   &:hover {
     transform: scale(1.06);
   }
+
+  @media (max-width: 1440px) {
+    padding: 30px 40px;
+  }
+  @media (max-width: 768px) {
+    padding: 25px 30px;
+  }
 `;
 
 const SectionIcon = styled(Box)`
@@ -45,6 +52,14 @@ const SectionIcon = styled(Box)`
   > img {
     width: 70%;
   }
+
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    width: 100px;
+  }
+  @media (max-width: 768px) {
+    width: 80px;
+  }
 `;
 
 const TextSubject = styled(Box)`
@@ -53,8 +68,17 @@ const TextSubject = styled(Box)`
   font-size: 4em;
   font-family: Rowdies;
   font-weight: 700;
-  line-height: 50px;
+  /* line-height: 50px; */
   margin-top: 40px;
+
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    margin-top: 30px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 20px;
+    font-size: 16px;
+  }
 `;
 
 const TextContent = styled(Box)`
@@ -64,6 +88,15 @@ const TextContent = styled(Box)`
   font-family: Lato;
   line-height: 40px;
   margin-top: 20px;
+
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    margin-top: 20px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 10px;
+    font-size: 16px;
+  }
 `;
 
 export default CardUtility;

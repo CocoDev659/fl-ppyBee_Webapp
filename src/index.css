@@ -16,19 +16,19 @@ body {
     font-size: 7.5px;
   }
   @media (max-width: 1024px) {
-    font-size: 6px;
+    font-size: 7px;
   }
   @media (max-width: 768px) {
-    font-size: 4px;
+    font-size: 6px;
   }
   @media (max-width: 500px) {
-    font-size: 3.5px;
+    font-size: 5.5px;
   }
   @media (max-width: 390px) {
-    font-size: 3px;
+    font-size: 5px;
   }
   @media (max-width: 350px) {
-    font-size: 2.5px;
+    font-size: 4px;
   }
 }
 

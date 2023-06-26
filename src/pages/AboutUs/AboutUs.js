@@ -49,6 +49,26 @@ const StyledComponent = styled(Box)`
   padding: 0px 120px;
   box-sizing: border-box;
   margin-top: 170px;
+
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    padding: 0px 90px;
+  }
+  @media (max-width: 1024px) {
+    padding: 0px 60px;
+  }
+  @media (max-width: 768px) {
+    padding: 0px 40px;
+  }
+  @media (max-width: 500px) {
+    padding: 0px 30px;
+  }
+  @media (max-width: 390px) {
+    padding: 0px 20px;
+  }
+  @media (max-width: 350px) {
+    padding: 0px 10px;
+  }
 `;
 
 const SectionLeft = styled(Box)`
@@ -60,6 +80,8 @@ const SectionLeft = styled(Box)`
 `;
 
 const TextAboutUs = styled(Box)`
+  display: flex;
+  width: 100%;
   color: #fff;
   font-size: 8em;
   font-family: Rowdies;
@@ -67,6 +89,8 @@ const TextAboutUs = styled(Box)`
 `;
 
 const TextDescriptionEach = styled(Box)`
+  display: flex;
+  width: 100%;
   color: #fff;
   font-size: 3em;
   font-family: Lato;
@@ -94,7 +118,8 @@ const SectionImageBee = styled(Box)`
 `;
 
 const ImageBee = styled(Box)`
-  width: 304px;
+  /* width: 304px; */
+  width: 70%;
 `;
 
 export default AboutUs;

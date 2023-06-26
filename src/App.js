@@ -20,9 +20,9 @@ function App() {
   return (
     <StyledComponent>
       <Home />
-      <AboutUs />
-      {/*  <Utilities />
-      <Tokenomics />
+      {/* <AboutUs /> */}
+        <Utilities />
+    {/*  <Tokenomics />
       <Roadmap />
       <Footer /> */}
     </StyledComponent>

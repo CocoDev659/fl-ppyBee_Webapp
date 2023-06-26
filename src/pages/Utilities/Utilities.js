@@ -26,6 +26,26 @@ const StyledComponent = styled(Box)`
   padding: 0px 120px;
   box-sizing: border-box;
   margin-top: 200px;
+
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    padding: 0px 90px;
+  }
+  @media (max-width: 1024px) {
+    padding: 0px 60px;
+  }
+  @media (max-width: 768px) {
+    padding: 0px 40px;
+  }
+  @media (max-width: 500px) {
+    padding: 0px 30px;
+  }
+  @media (max-width: 390px) {
+    padding: 0px 20px;
+  }
+  @media (max-width: 350px) {
+    padding: 0px 10px;
+  }
 `;
 
 const TextSubject = styled(Box)`
@@ -41,6 +61,26 @@ const SectionCard = styled(Box)`
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 60px;
   margin-top: 60px;
+
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    grid-column-gap: 50px;
+    margin-top: 50px;
+  }
+  @media (max-width: 1024px) {
+    grid-column-gap: 40px;
+  }
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-top: 40px;
+  }
+  @media (max-width: 600px) {
+    margin-top: 30px;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+  }
 `;
 
 export default Utilities;
