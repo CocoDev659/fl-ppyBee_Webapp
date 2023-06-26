@@ -63,7 +63,7 @@ const TextSubject = styled(Box)`
   text-align: center;
   font-size: 8em;
   font-family: Rowdies;
-  line-height: 110px;
+  /* line-height: 110px; */
 `;
 
 const ImageBackground = styled(Box)`
@@ -157,7 +157,7 @@ const SectionSupply = styled(Box)`
 
   transition: 0.3s;
   @media (max-width: 1600px) {
-    width: 450px;
+    width: 450px; 
     height: 100px;
   }
   @media (max-width: 1440px) {

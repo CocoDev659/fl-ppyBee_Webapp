@@ -29,22 +29,27 @@ const StyledComponent = styled(Box)`
 
   transition: 0.3s;
   @media (max-width: 1440px) {
+    margin-top: 180px;
     padding: 0px 90px;
   }
   @media (max-width: 1024px) {
     padding: 0px 60px;
+    margin-top: 150px;
   }
   @media (max-width: 768px) {
     padding: 0px 40px;
+    margin-top: 100px;
   }
   @media (max-width: 500px) {
     padding: 0px 30px;
   }
   @media (max-width: 390px) {
     padding: 0px 20px;
+    margin-top: 80px;
   }
   @media (max-width: 350px) {
     padding: 0px 10px;
+    margin-top: 60px;
   }
 `;
 
@@ -53,7 +58,7 @@ const TextSubject = styled(Box)`
   text-align: center;
   font-size: 8em;
   font-family: Rowdies;
-  line-height: 110px;
+  /* line-height: 110px; */
 `;
 
 const SectionCard = styled(Box)`

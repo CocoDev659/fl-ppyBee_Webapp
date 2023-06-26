@@ -33,6 +33,22 @@ const StyledComponent = styled(Box)`
   display: flex;
   flex-direction: column;
   margin-bottom: 140px;
+
+  transition: 0.3s;
+  @media (max-width: 1024px) {
+    margin-bottom: 120px;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 110px;
+  }
+  @media (max-width: 500px) {
+    margin-bottom: 95px;
+  }
+  @media (max-width: 390px) {
+    margin-bottom: 85px;
+  }
+
 `;
 
 const SectionContent = styled(Box)`
@@ -61,6 +77,32 @@ const SectionIcon = styled(Box)`
   color: ${({ flag }) => (flag ? "black" : "white")};
   font-size: 3.5rem;
   margin: 0px 60px;
+
+  transition: 0.3s;
+  @media (max-width: 1024px) {
+    width: 100px;
+    margin: 0px 50px;
+    font-size: 3.2rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 90px;
+    margin: 0px 40px;
+    font-size: 3rem;
+  }
+  @media (max-width: 500px) {
+    width: 80px;
+    margin: 0px 30px;
+    font-size: 2.5rem;
+  }
+  @media (max-width: 390px) {
+    font-size: 2rem;
+    width: 70px;
+    margin: 0px 20px;
+  }
+  @media (max-width: 350px) {
+    margin-top: 60px;
+  }
 `;
 
 const SectionTextContent = styled(Box)`

@@ -30,6 +30,24 @@ const StyledComponent = styled(Box)`
   flex-direction: column;
   align-items: center;
   margin-top: 140px;
+
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    margin-top: 120px;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 100px;
+  }
+  @media (max-width: 500px) {
+    margin-top: 90px;
+  }
+  @media (max-width: 390px) {
+    margin-top: 80px;
+  }
+  @media (max-width: 350px) {
+    margin-top: 60px;
+  }
 `;
 
 const TextSubject = styled(Box)`
@@ -37,13 +55,30 @@ const TextSubject = styled(Box)`
   text-align: center;
   font-size: 8em;
   font-family: Rowdies;
-  line-height: 110px;
+  /* line-height: 110px; */
 `;
 
 const SectionRoadmap = styled(Box)`
   display: flex;
   flex-direction: column;
   margin-top: 100px;
+
+  transition: 0.3s;
+  @media (max-width: 1024px) {
+    margin-top: 90px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 90px;
+  }
+  @media (max-width: 500px) {
+    margin-top: 60px;
+  }
+  @media (max-width: 390px) {
+    margin-top: 50px;
+  }
+  @media (max-width: 350px) {
+    margin-top: 40px;
+  }
 `;
 
 export default Roadmap;

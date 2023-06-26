@@ -21,10 +21,10 @@ function App() {
     <StyledComponent>
       <Home />
       {/* <AboutUs /> */}
-        <Utilities />
-    <Tokenomics />
-   {/*     <Roadmap />
-      <Footer /> */}
+      <Utilities />
+      <Tokenomics />
+      <Roadmap />
+      {/*      <Footer /> */}
     </StyledComponent>
   );
 }
