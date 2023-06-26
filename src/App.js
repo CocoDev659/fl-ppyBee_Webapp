@@ -22,8 +22,8 @@ function App() {
       <Home />
       {/* <AboutUs /> */}
         <Utilities />
-    {/*  <Tokenomics />
-      <Roadmap />
+    <Tokenomics />
+   {/*     <Roadmap />
       <Footer /> */}
     </StyledComponent>
   );

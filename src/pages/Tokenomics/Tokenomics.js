@@ -3,14 +3,12 @@ import { Box } from "@mui/material";
 import imgTokenomics from "../../assets/images/background/backTokenomics.svg";
 
 const Tokenomics = () => {
-
   return (
     <StyledComponent>
-      <TextSubject data-aos="zoom-in" data-aos-duration="1000">Tokenomics</TextSubject>
-      <ImageBackground
-        data-aos="fade-up"
-        data-aos-duration="2000"
-      >
+      <TextSubject data-aos="zoom-in" data-aos-duration="1000">
+        Tokenomics
+      </TextSubject>
+      <ImageBackground data-aos="fade-up" data-aos-duration="2000">
         <img src={imgTokenomics} width={"100%"} alt="" />
         <SectionReward>Game Reward: 30%</SectionReward>
         <SectionSupply>Circulating Supply: 25%</SectionSupply>
@@ -35,6 +33,29 @@ const StyledComponent = styled(Box)`
   );
   padding-bottom: 120px;
   box-sizing: border-box;
+
+  transition: 0.3s;
+  @media (max-width: 1600px) {
+    margin-top: 180px;
+  }
+  @media (max-width: 1440px) {
+    margin-top: 160px;
+  }
+  @media (max-width: 1024px) {
+    margin-top: 120px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 100px;
+  }
+  @media (max-width: 500px) {
+    margin-top: 90px;
+  }
+  @media (max-width: 390px) {
+    margin-top: 80px;
+  }
+  @media (max-width: 350px) {
+    margin-top: 60px;
+  }
 `;
 
 const TextSubject = styled(Box)`
@@ -69,12 +90,43 @@ const SectionReward = styled(Box)`
   line-height: 40px;
 
   left: 50%;
-  top: 150px;
+  top: 10%;
   transform: translateX(-50%);
   cursor: pointer;
   transition: 0.3s;
   &:hover {
     box-shadow: 0px 0px 20px white;
+  }
+
+  transition: 0.3s;
+  @media (max-width: 1600px) {
+    width: 600px;
+    height: 100px;
+  }
+  @media (max-width: 1440px) {
+    width: 530px;
+    height: 90px;
+  }
+  @media (max-width: 1024px) {
+    width: 400px;
+    height: 70px;
+  }
+  @media (max-width: 768px) {
+    width: 290px;
+    height: 50px;
+  }
+  @media (max-width: 500px) {
+    width: 230px;
+    height: 40px;
+  }
+  @media (max-width: 390px) {
+    width: 150px;
+    height: 30px;
+    top: 8%;
+  }
+  @media (max-width: 350px) {
+    width: 120px;
+    height: 20px;
   }
 `;
 
@@ -96,11 +148,41 @@ const SectionSupply = styled(Box)`
   line-height: 40px;
 
   right: 60%;
-  top: 370px;
+  top: 32%;
   cursor: pointer;
   transition: 0.3s;
   &:hover {
     box-shadow: 0px 0px 20px white;
+  }
+
+  transition: 0.3s;
+  @media (max-width: 1600px) {
+    width: 450px;
+    height: 100px;
+  }
+  @media (max-width: 1440px) {
+    width: 420px;
+    height: 90px;
+  }
+  @media (max-width: 1024px) {
+    width: 300px;
+    height: 70px;
+  }
+  @media (max-width: 768px) {
+    width: 230px;
+    height: 50px;
+  }
+  @media (max-width: 500px) {
+    width: 200px;
+    height: 40px;
+  }
+  @media (max-width: 390px) {
+    width: 150px;
+    height: 30px;
+  }
+  @media (max-width: 350px) {
+    width: 120px;
+    height: 20px;
   }
 `;
 
@@ -121,11 +203,41 @@ const SectionLiquidity = styled(Box)`
   font-family: Lato;
   line-height: 40px;
   left: 60%;
-  top: 370px;
+  top: 32%;
   cursor: pointer;
   transition: 0.3s;
   &:hover {
     box-shadow: 0px 0px 20px white;
+  }
+
+  transition: 0.3s;
+  @media (max-width: 1600px) {
+    width: 450px;
+    height: 100px;
+  }
+  @media (max-width: 1440px) {
+    width: 420px;
+    height: 90px;
+  }
+  @media (max-width: 1024px) {
+    width: 300px;
+    height: 70px;
+  }
+  @media (max-width: 768px) {
+    width: 230px;
+    height: 50px;
+  }
+  @media (max-width: 500px) {
+    width: 200px;
+    height: 40px;
+  }
+  @media (max-width: 390px) {
+    width: 150px;
+    height: 30px;
+  }
+  @media (max-width: 350px) {
+    width: 120px;
+    height: 20px;
   }
 `;
 
@@ -147,11 +259,42 @@ const SectionFarming = styled(Box)`
   line-height: 40px;
 
   right: 63%;
-  top: 630px;
+  top: 55%;
   cursor: pointer;
   transition: 0.3s;
   &:hover {
     box-shadow: 0px 0px 20px white;
+  }
+
+  transition: 0.3s;
+  @media (max-width: 1600px) {
+    width: 450px;
+    height: 100px;
+  }
+  @media (max-width: 1440px) {
+    width: 375px;
+    height: 90px;
+  }
+  @media (max-width: 1024px) {
+    width: 300px;
+    height: 70px;
+  }
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 50px;
+  }
+  @media (max-width: 500px) {
+    width: 150px;
+    height: 40px;
+  }
+  @media (max-width: 390px) {
+    width: 120px;
+    height: 30px;
+    top:53%;
+  }
+  @media (max-width: 350px) {
+    width: 100px;
+    height: 20px;
   }
 `;
 
@@ -173,11 +316,42 @@ const SectionEcosystem = styled(Box)`
   line-height: 40px;
 
   left: 63%;
-  top: 630px;
+  top: 55%;
   cursor: pointer;
   transition: 0.3s;
   &:hover {
     box-shadow: 0px 0px 20px white;
+  }
+
+  transition: 0.3s;
+  @media (max-width: 1600px) {
+    width: 450px;
+    height: 100px;
+  }
+  @media (max-width: 1440px) {
+    width: 375px;
+    height: 90px;
+  }
+  @media (max-width: 1024px) {
+    width: 300px;
+    height: 70px;
+  }
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 50px;
+  }
+  @media (max-width: 500px) {
+    width: 150px;
+    height: 40px;
+  }
+  @media (max-width: 390px) {
+    width: 120px;
+    height: 30px;
+    top: 53%;
+  }
+  @media (max-width: 350px) {
+    width: 100px;
+    height: 20px;
   }
 `;
 
