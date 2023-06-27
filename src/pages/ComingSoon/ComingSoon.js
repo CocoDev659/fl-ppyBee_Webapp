@@ -9,8 +9,8 @@ const ComingSoon = () => {
       <TextSubject data-aos="zoom-in" data-aos-duration="1000">
         Coming Soon
       </TextSubject>
-      <SectionComingSoon data-aos="fade-up" data-aos-duration="2000">
-        <SectionButtonAPP>
+      <SectionComingSoon>
+        <SectionButtonAPP data-aos="fade-right" data-aos-duration="1000">
           <SectionAppIcon>
             <img src={imgIconGoogle} width={"100%"} alt="" />
           </SectionAppIcon>
@@ -19,7 +19,7 @@ const ComingSoon = () => {
             <TextDown>Google Play</TextDown>
           </SectionTextGroup>
         </SectionButtonAPP>
-        <SectionButtonAPP>
+        <SectionButtonAPP data-aos="fade-left" data-aos-duration="1000">
           <SectionAppIcon>
             <img src={imgIconApple} width={"100%"} alt="" />
           </SectionAppIcon>

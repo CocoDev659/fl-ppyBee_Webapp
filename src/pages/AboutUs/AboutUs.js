@@ -24,11 +24,11 @@ const AboutUs = () => {
           strength to drive innovation and progress and empowers users to
           navigate the crypto landscape with confidence and success.
         </TextDescriptionEach>
-        <TextDescriptionEach>
+        <TextDescriptionAddress>
           CA: 0x68b3A846C00A3d97B5090B2Aefe62611A0B4A9f1
           <br />
           Contact: owner@veathena.xyz
-        </TextDescriptionEach>
+        </TextDescriptionAddress>
       </SectionLeft>
       <SectionRight data-aos="fade-left" data-aos-duration="2000">
         <SectionImageBee>
@@ -52,21 +52,29 @@ const StyledComponent = styled(Box)`
 
   transition: 0.3s;
   @media (max-width: 1440px) {
+    margin-top: 150px;
     padding: 0px 90px;
   }
   @media (max-width: 1024px) {
+    margin-top: 100px;
     padding: 0px 60px;
   }
   @media (max-width: 768px) {
+    margin-top: 60px;
     padding: 0px 40px;
+  }
+  @media (max-width: 700px) {
+    flex-direction: column;
   }
   @media (max-width: 500px) {
     padding: 0px 30px;
   }
   @media (max-width: 390px) {
+    margin-top: 50px;
     padding: 0px 20px;
   }
   @media (max-width: 350px) {
+    margin-top: 40px;
     padding: 0px 10px;
   }
 `;
@@ -77,6 +85,20 @@ const SectionLeft = styled(Box)`
   width: 100%;
   flex-direction: column;
   margin-right: 150px;
+
+  transition: 0.3s;
+  @media (max-width: 1600px) {
+    margin-right: 100px;
+  }
+  @media (max-width: 1440px) {
+    margin-right: 60px;
+  }
+  @media (max-width: 768px) {
+    margin-right: 40px;
+  }
+  @media (max-width: 700px) {
+    margin-right: unset;
+  }
 `;
 
 const TextAboutUs = styled(Box)`
@@ -85,7 +107,7 @@ const TextAboutUs = styled(Box)`
   color: #fff;
   font-size: 8em;
   font-family: Rowdies;
-  line-height: 110px;
+  /* line-height: 110px; */
 `;
 
 const TextDescriptionEach = styled(Box)`
@@ -96,12 +118,73 @@ const TextDescriptionEach = styled(Box)`
   font-family: Lato;
   line-height: 40px;
   margin-top: 40px;
+
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    margin-top: 30px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 20px;
+    line-height: 20px;
+  }
+  @media (max-width: 390px) {
+    margin-top: 16px;
+    line-height: 20px;
+  }
+  @media (max-width: 390px) {
+    margin-top: 10px;
+  }
+`;
+
+const TextDescriptionAddress = styled(Box)`
+  display: flex;
+  width: 100%;
+  color: #fff;
+  font-size: 3em;
+  font-family: Lato;
+  line-height: 40px;
+  margin-top: 40px;
+  word-break: break-all;
+
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    margin-top: 30px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 20px;
+    line-height: 20px;
+  }
+  @media (max-width: 390px) {
+    margin-top: 10px;
+    line-height: 10px;
+  }
 `;
 
 const SectionRight = styled(Box)`
   display: flex;
   width: 600px;
   min-width: 600px;
+
+  transition: 0.3s;
+  @media (max-width: 1600px) {
+    width: 550px;
+    min-width: 550px;
+  }
+  @media (max-width: 1440px) {
+    width: 460px;
+    min-width: 460px;
+  }
+  @media (max-width: 1024px) {
+    width: 400px;
+    min-width: 400px;
+  }
+  @media (max-width: 768px) {
+    width: 260px;
+    min-width: 260px;
+  }
+  @media (max-width: 700px) {
+    margin-top: 50px;
+  }
 `;
 
 const SectionImageBee = styled(Box)`
