@@ -9,7 +9,10 @@ const Home = () => {
     <StyledComponent>
       <SectionImageHome>
         <img src={imgHomeBack} width={"100%"} alt="" />
-        <TextTitle>Flappy Bee</TextTitle>
+        <SectionTitle>
+          <TextTitle>Flappy Bee</TextTitle>
+        </SectionTitle>
+
         <SectionButtonPlay>
           <ButtonPlay>Play</ButtonPlay>
         </SectionButtonPlay>
@@ -51,35 +54,55 @@ const SectionImageHome = styled(Box)`
   }
 `;
 
-const TextTitle = styled(Box)`
+const SectionTitle = styled(Box)`
   display: flex;
   position: absolute;
   width: 100%;
   justify-content: center;
   align-items: center;
   top: 35px;
+  filter: drop-shadow(7px 5px 0px #003d28);
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    filter: drop-shadow(7px 5px 0px #003d28);
+  }
+  @media (max-width: 1024px) {
+    filter: drop-shadow(6px 4px 0px #003d28);
+  }
+  @media (max-width: 768px) {
+    filter: drop-shadow(5px 3px 0px #003d28);
+  }
+  @media (max-width: 390px) {
+    filter: drop-shadow(3px 1px 0px #003d28);
+  }
+`;
 
+const TextTitle = styled(Box)`
   color: #a9d100;
   text-align: center;
   font-size: 13em;
   font-family: Rowdies;
-  -webkit-text-stroke: 3px #003d28;
-  text-shadow: 10px 7px 0px #003d28;
 
-  transition: 0.3s;
+  background: -webkit-linear-gradient(
+    rgba(225, 255, 202, 1),
+    rgba(169, 209, 0, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 3px #003d28;
+  -webkit-text-fill-color: transparent;
 
   transition: 0.3s;
   @media (max-width: 1024px) {
-    font-size: 80 px;
+    font-size: 80px;
   }
   @media (max-width: 768px) {
+    -webkit-text-stroke: 2px #003d28;
     font-size: 53px;
   }
   @media (max-width: 390px) {
+    -webkit-text-stroke: 1px #003d28;
     font-size: 45px;
-  } 
-
-
+  }
 `;
 
 const SectionButtonPlay = styled(Box)`
