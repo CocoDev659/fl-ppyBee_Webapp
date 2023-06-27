@@ -9,6 +9,7 @@ import Footer from "./layout/Footer/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import ComingSoon from "./pages/ComingSoon/ComingSoon";
 
 function App() {
   useEffect(() => {
@@ -24,7 +25,8 @@ function App() {
       <Utilities />
       <Tokenomics />
       <Roadmap />
-           <Footer />
+      <ComingSoon />
+      <Footer />
     </StyledComponent>
   );
 }

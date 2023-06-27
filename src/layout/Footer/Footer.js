@@ -51,7 +51,7 @@ const StyledComponent = styled(Box)`
     padding: 70px 30px;
   }
   @media (max-width: 390px) {
-    padding: 8ch 20px;
+    padding: 80px 20px;
   }
   @media (max-width: 350px) {
     padding: 60px 10px;
@@ -149,6 +149,7 @@ const ButtonSocialLink = styled(Box)`
     width: 50px;
   }
   @media (max-width: 1024px) {
+    font-size: 1.5rem;
     width: 40px;
   }
   @media (max-width: 768px) {
