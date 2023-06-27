@@ -24,7 +24,7 @@ function App() {
       <Utilities />
       <Tokenomics />
       <Roadmap />
-      {/*      <Footer /> */}
+           <Footer />
     </StyledComponent>
   );
 }

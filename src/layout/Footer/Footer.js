@@ -24,7 +24,7 @@ const Footer = () => {
           })}
         </SectionLinkButtonGroup>
       </SectionLink>
-    </StyledComponent> 
+    </StyledComponent>
   );
 };
 
@@ -35,6 +35,27 @@ const StyledComponent = styled(Box)`
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
+
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    padding: 100px 90px;
+  }
+  @media (max-width: 1024px) {
+    padding: 90px 60px;
+  }
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+    padding: 80px 40px;
+  }
+  @media (max-width: 500px) {
+    padding: 70px 30px;
+  }
+  @media (max-width: 390px) {
+    padding: 8ch 20px;
+  }
+  @media (max-width: 350px) {
+    padding: 60px 10px;
+  }
 `;
 
 const TextTitle = styled(Box)`
@@ -45,11 +66,41 @@ const TextTitle = styled(Box)`
   line-height: 94.459px;
   -webkit-text-stroke: 3px #003d28;
   text-shadow: 5px 5px 0px #00583a;
+
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    font-size: 6em;
+  }
+  @media (max-width: 900px) {
+    font-size: 6em;
+    text-shadow: 3px 3px 0px #00583a;
+  }
+  @media (max-width: 768px) {
+    font-size: 7em;
+    text-shadow: 3px 3px 0px #00583a;
+  }
+  @media (max-width: 500px) {
+    font-size: 6em;
+    -webkit-text-stroke: 1px #003d28;
+    text-shadow: 3px 3px 0px #00583a;
+  }
+  @media (max-width: 390px) {
+    font-size: 7em;
+    -webkit-text-stroke: 1px #003d28;
+    text-shadow: 2px 2px 0px #00583a;
+  }
+  @media (max-width: 350px) {
+    font-size: 6em;
+  }
 `;
 
 const SectionLink = styled(Box)`
   display: flex;
   align-items: center;
+  transition: 0.3s;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 `;
 
 const TextUpdate = styled(Box)`
@@ -58,6 +109,15 @@ const TextUpdate = styled(Box)`
   font-family: Rowdies;
   line-height: 60px;
   margin-right: 35px;
+
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    margin-right: 20px;
+    font-size: 30px;
+  }
+  @media (max-width: 900px) {
+    font-size: 20px;
+  }
 `;
 
 const SectionLinkButtonGroup = styled(Box)`
@@ -81,6 +141,22 @@ const ButtonSocialLink = styled(Box)`
   transition: 0.3s;
   &:hover {
     color: #a9d100;
+  }
+
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    font-size: 2rem;
+    width: 50px;
+  }
+  @media (max-width: 1024px) {
+    width: 40px;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+    width: 30px;
+  }
+  @media (max-width: 390px) {
+    width: 30px;
   }
 `;
 
