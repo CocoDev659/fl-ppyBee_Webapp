@@ -14,7 +14,14 @@ const Home = () => {
         </SectionTitle>
 
         <SectionButtonPlay>
-          <ButtonPlay>Play</ButtonPlay>
+          <a
+            href="http://127.0.0.1:5173/play"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <ButtonPlay>Open</ButtonPlay>
+          </a>
         </SectionButtonPlay>
         <IconFlyingBee01>
           <img src={imgFlyingBee} width={"100%"} alt="" />

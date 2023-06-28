@@ -5,7 +5,13 @@ import { dataSocialLink } from "../../data/Link";
 const Footer = () => {
   return (
     <StyledComponent>
-      <TextTitle>Flappy Bee</TextTitle>
+      <TextTitle
+        onClick={() => {
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }}
+      >
+        Flappy Bee
+      </TextTitle>
       <SectionLink>
         <TextUpdate>Stay tuned for more updates</TextUpdate>
         <SectionLinkButtonGroup>
@@ -66,6 +72,8 @@ const TextTitle = styled(Box)`
   line-height: 94.459px;
   -webkit-text-stroke: 3px #003d28;
   text-shadow: 5px 5px 0px #00583a;
+
+  cursor: pointer;
 
   transition: 0.3s;
   @media (max-width: 1440px) {
