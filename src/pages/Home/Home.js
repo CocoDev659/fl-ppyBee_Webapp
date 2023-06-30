@@ -15,6 +15,7 @@ const Home = () => {
 
         <SectionButtonPlay>
           <a
+            // href="http://127.0.0.1:5173/play"
             href="http://127.0.0.1:5173/play"
             target="_blank"
             rel="noopener noreferrer"
