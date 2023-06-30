@@ -16,7 +16,7 @@ const Home = () => {
         <SectionButtonPlay>
           <a
             // href="http://127.0.0.1:5173/play"
-            href="http://127.0.0.1:5173/play"
+            href="https://flappybee-game-dapp.netlify.app/play"
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: "none" }}
