@@ -112,7 +112,17 @@ const SectionButtonAPP = styled(Box)`
   padding: 0px 30px;
   box-sizing: border-box;
 
+  cursor: pointer;
+  user-select: none;
+
   transition: 0.3s;
+  &:hover {
+    box-shadow: 0px 0px 10px white;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
   @media (max-width: 1440px) {
     width: 340px;
     height: 100px;
