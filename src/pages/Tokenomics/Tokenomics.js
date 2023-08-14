@@ -10,11 +10,11 @@ const Tokenomics = () => {
       </TextSubject>
       <ImageBackground data-aos="fade-up" data-aos-duration="2000">
         <img src={imgTokenomics} width={"100%"} alt="" />
-        <SectionReward>Game Reward: 30%</SectionReward>
-        <SectionSupply>Circulating Supply: 25%</SectionSupply>
-        <SectionLiquidity>Liquidity Pool: 14%</SectionLiquidity>
-        <SectionFarming>Farming: 11%</SectionFarming>
-        <SectionEcosystem>Ecosystem: 20%</SectionEcosystem>
+        <SectionReward>Fair-Launch: 30%</SectionReward>
+        <SectionSupply>Game Reward: 25%</SectionSupply>
+        <SectionLiquidity>Liquidity Pool: 16%</SectionLiquidity>
+        <SectionFarming>Farming: 15%</SectionFarming>
+        <SectionEcosystem>Ecosystem: 14%</SectionEcosystem>
       </ImageBackground>
     </StyledComponent>
   );

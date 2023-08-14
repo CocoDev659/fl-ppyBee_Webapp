@@ -13,7 +13,7 @@ const Footer = () => {
         Flappy Bee
       </TextTitle>
       <SectionLink>
-        <TextUpdate>Stay tuned for more updates</TextUpdate>
+        <TextUpdate>Join our growing community!</TextUpdate>
         <SectionLinkButtonGroup>
           {dataSocialLink?.map((each, index) => {
             return (
