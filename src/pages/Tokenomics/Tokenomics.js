@@ -173,15 +173,15 @@ const SectionSupply = styled(Box)`
     height: 50px;
   }
   @media (max-width: 500px) {
-    width: 200px;
+    width: 180px;
     height: 40px;
   }
   @media (max-width: 390px) {
-    width: 150px;
+    width: 130px;
     height: 30px;
   }
   @media (max-width: 350px) {
-    width: 120px;
+    width: 110px;
     height: 20px;
   }
 `;
@@ -228,15 +228,15 @@ const SectionLiquidity = styled(Box)`
     height: 50px;
   }
   @media (max-width: 500px) {
-    width: 200px;
+    width: 180px;
     height: 40px;
   }
   @media (max-width: 390px) {
-    width: 150px;
+    width: 130px;
     height: 30px;
   }
   @media (max-width: 350px) {
-    width: 120px;
+    width: 110px;
     height: 20px;
   }
 `;
