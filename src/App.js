@@ -10,29 +10,47 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import ComingSoon from "./pages/ComingSoon/ComingSoon";
-import { Suspense } from "react";
+import { useState } from "react";
 
 const App = () => {
+  const [isLoading, setLoading] = useState(true);
+
+  function someRequest() {
+    //Simulates a request; makes a "promise" that'll run for 2.5 seconds
+    return new Promise((resolve) => setTimeout(() => resolve(), 2500));
+  }
+
   useEffect(() => {
     AOS.init({
       duration: 3000,
     });
   }, []);
 
-  function Loading() {
-    return <h2>🌀 Loading...</h2>;
+  useEffect(() => {
+    console.log(isLoading);
+    someRequest().then(() => {
+      const loaderElement = document.querySelector(".content_ring");
+      if (loaderElement) {
+        loaderElement.remove();
+        setLoading(!isLoading);
+      }
+    });
+  });
+
+  if (isLoading) {
+    //
+    return null;
   }
+
   return (
     <StyledComponent>
-      <Suspense fallback={<Loading />}>
-        <Home />
-        <AboutUs />
-        <Utilities />
-        <Tokenomics />
-        <Roadmap />
-        <ComingSoon />
-        <Footer />
-      </Suspense>
+      <Home />
+      <AboutUs />
+      <Utilities />
+      <Tokenomics />
+      <Roadmap />
+      <ComingSoon />
+      <Footer />
     </StyledComponent>
   );
 };
