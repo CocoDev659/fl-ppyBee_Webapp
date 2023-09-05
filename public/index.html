@@ -76,7 +76,7 @@
       animation: animateC 1s linear infinite;
     }
 
-    span {
+    .page_load_spin {
       display: block;
       position: absolute;
       top: calc(50% - 2px);
@@ -89,7 +89,7 @@
       animation: animate 1s linear infinite;
     }
 
-    span:before {
+    .page_load_spin:before {
       content: '';
       position: absolute;
       width: 16px;
@@ -153,7 +153,7 @@
     -->
   <div class="content_ring">
     <div class="ring">Flappy Bee
-      <span></span>
+      <span class="page_load_spin"></span>
     </div>
   </div>
 
