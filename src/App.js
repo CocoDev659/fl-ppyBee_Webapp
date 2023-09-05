@@ -10,32 +10,39 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import ComingSoon from "./pages/ComingSoon/ComingSoon";
+import { Suspense } from "react";
 
-function App() {
+const App = () => {
   useEffect(() => {
     AOS.init({
       duration: 3000,
     });
   }, []);
 
+  function Loading() {
+    return <h2>🌀 Loading...</h2>;
+  }
   return (
     <StyledComponent>
-      <Home />
-      <AboutUs />
-      <Utilities />
-      <Tokenomics />
-      <Roadmap />
-      <ComingSoon />
-      <Footer />
+      <Suspense fallback={<Loading />}>
+        <Home />
+        <AboutUs />
+        <Utilities />
+        <Tokenomics />
+        <Roadmap />
+        <ComingSoon />
+        <Footer />
+      </Suspense>
     </StyledComponent>
   );
-}
+};
 
 const StyledComponent = styled(Box)`
   display: flex;
   width: 100%;
   flex-direction: column;
   background-color: #003d28;
+  overflow: hidden;
 `;
 
 export default App;
