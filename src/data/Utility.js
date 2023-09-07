@@ -13,7 +13,7 @@ export const dataUtilities = [
     icon: imgStaking,
     textSubject: "Staking",
     textContent:
-      "Staking in Flappy bee is the process of locking up your BEET (Flappy bee native token) to earn rewards and participate in the governance of the ecosystem.",
+      "Staking in Flappy Bee is the process of locking up your BEET (Flappy Bee native token) to earn rewards and participate in the governance of the ecosystem.",
   },
   {
     icon: imgBee,
