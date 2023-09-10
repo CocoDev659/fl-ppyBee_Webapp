@@ -26,7 +26,7 @@ const NFTs = () => {
           rel="noopener noreferrer"
           style={{ textDecoration: "none" }}
         >
-          <ButtonPlay>Browse</ButtonPlay>
+          <ButtonPlay>Open</ButtonPlay>
         </a>
       </SectionButtonPlay>
     </StyledComponent>

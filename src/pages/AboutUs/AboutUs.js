@@ -36,7 +36,7 @@ const AboutUs = () => {
         <TextDescriptionEach>
           It's time to Embrace this exciting journey with Flappy. Help Flappy
           rescue the queen and discover the world of FlappyBee. The future of
-          gaming is here. Let's fly together! 🚀
+          gaming is here. Let's fly together!
         </TextDescriptionEach>
       </SectionLeft>
       <SectionRight data-aos="fade-left" data-aos-duration="2000">
