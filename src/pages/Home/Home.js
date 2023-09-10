@@ -1,14 +1,27 @@
 import styled from "styled-components";
 import { Box } from "@mui/material";
 import imgHomeBack from "../../assets/images/background/imgHome.png";
+import imgHomeBackSmall from "../../assets/images/background/imgHome_small.png";
 import imgButtonWide from "../../assets/images/button/wide.png";
 import imgFlyingBee from "../../assets/images/icon/flyingbeeanimation.gif";
+import useProgressiveImg from "../../components/Image/ImageLoadEffect";
 
 const Home = () => {
+  const [src, { blur }] = useProgressiveImg(imgHomeBackSmall, imgHomeBack);
+
   return (
     <StyledComponent>
       <SectionImageHome>
-        <img src={imgHomeBack} width={"100%"} loading="lazy" alt="" />
+        <img
+          src={src}
+          style={{
+            width: "100%",
+            filter: blur ? "blur(20px)" : "none",
+            transition: blur ? "none" : "filter 0.5s ease-out",
+          }}
+          loading="lazy"
+          alt=""
+        />
         <SectionTitle>
           <TextTitle>Flappy Bee</TextTitle>
         </SectionTitle>
