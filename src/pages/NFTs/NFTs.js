@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Box } from "@mui/material";
-import { dataUtilities } from "../../data/Utility";
-import CardUtility from "../../components/Card/CardUtility";
+import imgButtonWide from "../../assets/images/button/wide.png";
 
 const NFTs = () => {
   return (
@@ -10,10 +9,26 @@ const NFTs = () => {
         Flappy Bee NFTs
       </TextSubject>
       <SectionCard>
-        {dataUtilities?.map((each, index) => {
-          return <CardUtility data={each} key={index} />;
+        {new Array(10).fill(0).map((each, index) => {
+          return (
+            <CartNFT data-aos="flip-left" data-aos-duration="2000">
+              <img src={`/assets/images/NFTs/${index + 1}.jpg`} alt="" />
+            </CartNFT>
+          );
         })}
       </SectionCard>
+      <SectionButtonPlay>
+        <a
+          // href="http://127.0.0.1:3000/play"
+          // href="https://flappybee-game-dapp.netlify.app/play"
+          href="https://app.flappybee.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none" }}
+        >
+          <ButtonPlay>Browse</ButtonPlay>
+        </a>
+      </SectionButtonPlay>
     </StyledComponent>
   );
 };
@@ -63,17 +78,20 @@ const TextSubject = styled(Box)`
 
 const SectionCard = styled(Box)`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 60px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 45px;
+  grid-row-gap: 45px;
   margin-top: 60px;
 
   transition: 0.3s;
   @media (max-width: 1440px) {
-    grid-column-gap: 50px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
     margin-top: 50px;
   }
   @media (max-width: 1024px) {
-    grid-column-gap: 40px;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
   }
   @media (max-width: 900px) {
     grid-template-columns: 1fr 1fr;
@@ -81,10 +99,92 @@ const SectionCard = styled(Box)`
     grid-row-gap: 30px;
     margin-top: 40px;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 500px) {
     margin-top: 30px;
-    grid-template-columns: 1fr;
-    grid-row-gap: 30px;
+
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+`;
+
+const CartNFT = styled(Box)`
+  display: flex;
+  user-select: none;
+  cursor: pointer;
+  flex: 1;
+  > img {
+    border-radius: 4px;
+    width: 100%;  transition: 0.3s;
+  }
+  border-radius: 4px;
+  transition: 0.3s;
+  &:hover {
+    > img {
+      box-shadow: 0px 0px 12px white;
+    }
+  }
+`;
+
+const SectionButtonPlay = styled(Box)`
+  display: flex;
+  margin-top: 80px;
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    margin-top: 60px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
+  @media (max-width: 390px) {
+    margin-top: 50px;
+  }
+`;
+
+const ButtonPlay = styled(Box)`
+  display: flex;
+  width: 450px;
+  height: 130px;
+  align-items: center;
+  justify-content: center;
+  background-image: url(${imgButtonWide});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  color: #511900;
+  text-align: center;
+  font-size: 7em;
+  font-family: Rowdies;
+  font-weight: 300;
+  line-height: 90px;
+
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+  &:hover {
+    color: white;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+
+  transition: 0.3s;
+  @media (max-width: 1600px) {
+    width: 400px;
+    height: 115px;
+  }
+  @media (max-width: 1440px) {
+    width: 360px;
+    height: 100px;
+  }
+  @media (max-width: 1024px) {
+    width: 300px;
+    height: 80px;
+  }
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 55px;
+    font-size: 5em;
   }
 `;
 
