@@ -3,18 +3,17 @@ import { Box } from "@mui/material";
 import { dataUtilities } from "../../data/Utility";
 import CardUtility from "../../components/Card/CardUtility";
 
-const Utilities = () => {
+const NFTs = () => {
   return (
     <StyledComponent>
       <TextSubject data-aos="zoom-in" data-aos-duration="1000">
-        Utilities
+        Flappy Bee NFTs
       </TextSubject>
       <SectionCard>
         {dataUtilities?.map((each, index) => {
           return <CardUtility data={each} key={index} />;
         })}
       </SectionCard>
-    
     </StyledComponent>
   );
 };
@@ -89,5 +88,4 @@ const SectionCard = styled(Box)`
   }
 `;
 
-
-export default Utilities;
+export default NFTs;

@@ -11,6 +11,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import ComingSoon from "./pages/ComingSoon/ComingSoon";
 import { useState } from "react";
+import NFTs from "./pages/NFTs/NFTs";
 
 const App = () => {
   const [isLoading, setLoading] = useState(true);
@@ -47,6 +48,7 @@ const App = () => {
       <Home />
       <AboutUs />
       <Utilities />
+      <NFTs />
       <Tokenomics />
       <Roadmap />
       <ComingSoon />

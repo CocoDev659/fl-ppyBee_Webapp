@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Box } from "@mui/material";
+// import imgButtonWide from "../../assets/images/button/wide.png";
 
 const CardUtility = ({ data }) => {
   return (
@@ -13,6 +14,23 @@ const CardUtility = ({ data }) => {
       </SectionIcon>
       <TextSubject>{data.textSubject}</TextSubject>
       <TextContent>{data.textContent}</TextContent>
+      {/* <SectionButtonPlay>
+        <a
+          // href="http://127.0.0.1:3000/play"
+          // href="https://flappybee-game-dapp.netlify.app/play"
+          href={data.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            textDecoration: "none",
+            display: " flex",
+            width: "100%",
+            justifyContent: "center",
+          }}
+        >
+          <ButtonPlay>{data.button}</ButtonPlay>
+        </a>
+      </SectionButtonPlay> */}
     </StyledComponent>
   );
 };
@@ -98,5 +116,55 @@ const TextContent = styled(Box)`
     font-size: 16px;
   }
 `;
+
+// const SectionButtonPlay = styled(Box)`
+//   display: flex;
+//   margin-top: 40px;
+//   width: 100%;
+//   justify-content: center;
+//   align-items: center;
+// `;
+
+// const ButtonPlay = styled(Box)`
+//   display: flex;
+//   width: 80%;
+//   height: 90px;
+//   align-items: center;
+//   justify-content: center;
+//   background-image: url(${imgButtonWide});
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: 100% 100%;
+
+//   color: #511900;
+//   text-align: center;
+//   font-size: 4em;
+//   font-family: Rowdies;
+//   font-weight: 300;
+//   line-height: 90px;
+
+//   cursor: pointer;
+//   user-select: none;
+//   transition: 0.3s;
+//   &:hover {
+//     color: white;
+//   }
+//   &:active {
+//     transform: scale(0.9);
+//   }
+
+//   transition: 0.3s;
+
+//   @media (max-width: 1440px) {
+//     height: 80px;
+//   }
+//   @media (max-width: 1024px) {
+//     height: 70px;
+//   }
+//   @media (max-width: 768px) {
+//     height: 60px;
+//     font-size: 3em;
+//   }
+// `;
 
 export default CardUtility;

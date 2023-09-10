@@ -1,12 +1,13 @@
 import { FaLaptopCode, FaLayerGroup, FaFortAwesome } from "react-icons/fa";
 export const dataRoadmap = [
   {
-    title: "Q2  2023",
+    title: "Q1  2023",
     icon: <FaLaptopCode />,
     content: [
       "Development of Website",
-      "Whitepaper Release",
+      "Forming partnerships",
       "Social Media Marketing",
+      "Game developments and mechanics",
       "Demo Gameplay",
     ],
     flagDone: true,
@@ -15,6 +16,9 @@ export const dataRoadmap = [
     title: "Q2  2023",
     icon: <FaLayerGroup />,
     content: [
+      "Lite paper Release",
+      "Fair-launch",
+      "Update to code database",
       "Tier 1 CEX listing",
       "NFTs Reveal",
       "Play to Earn Release",
@@ -30,6 +34,7 @@ export const dataRoadmap = [
       "Customization",
       "Mint own NFTs",
       "Listing in Dex",
+      "Update others",
     ],
     flagDone: false,
   },

@@ -10,7 +10,7 @@ const SectionEachRoadMap = ({ data, flagDirect }) => {
           {data.icon}
           {flagDirect ? (
             <SectionDirect flag={data.flagDone ? 1 : 0}></SectionDirect>
-          ) : (
+          ) : (   
             <></>
           )}
         </SectionIcon>
@@ -126,7 +126,7 @@ const SectionPoint = styled(Box)`
 
 const TextEachContent = styled(Box)`
   color: #fff;
-  font-size: 3em;
+  font-size: 2.5em;
   font-family: Lato;
   line-height: 40px;
 `;
@@ -137,7 +137,7 @@ const SectionDirect = styled(Box)`
   left: 50%;
   top: 100%;
   transform: translateX(-50%);
-  height: 200px;
+  height: 300px;
   border: ${({ flag }) => (flag ? "2px dashed #0CFF50 " : "2px dashed white")};
 `;
 
