@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <StyledComponent>
       <SectionImageHome>
-        <img src={imgHomeBack} width={"100%"} alt="" />
+        <img src={imgHomeBack} width={"100%"} loading="lazy" alt="" />
         <SectionTitle>
           <TextTitle>Flappy Bee</TextTitle>
         </SectionTitle>

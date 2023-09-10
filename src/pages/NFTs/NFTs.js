@@ -12,7 +12,7 @@ const NFTs = () => {
         {new Array(10).fill(0).map((each, index) => {
           return (
             <CartNFT data-aos="flip-left" data-aos-duration="2000">
-              <img src={`/assets/images/NFTs/${index + 1}.jpg`} alt="" />
+              <img src={`/assets/images/nfts/${index + 1}.jpg`} alt="" />
             </CartNFT>
           );
         })}
