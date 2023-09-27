@@ -5,9 +5,13 @@ import imgHomeBackSmall from "../../assets/images/background/imgHome_small.png";
 import imgButtonWide from "../../assets/images/button/wide.png";
 import imgFlyingBee from "../../assets/images/icon/flyingbeeanimation.gif";
 import useProgressiveImg from "../../components/Image/ImageLoadEffect";
+import PDFBEETPaper from "../../assets/pdf/FLAPPYBEE.pdf";
 
 const Home = () => {
   const [src, { blur }] = useProgressiveImg(imgHomeBackSmall, imgHomeBack);
+  const handleOpenPDF = () => {
+    window.open(PDFBEETPaper);
+  };
 
   return (
     <StyledComponent>
@@ -35,8 +39,24 @@ const Home = () => {
             rel="noopener noreferrer"
             style={{ textDecoration: "none" }}
           >
-            <ButtonPlay>Open</ButtonPlay>
+            <ButtonPlay>Launch App</ButtonPlay>
           </a>
+          {/* <a
+            // href="http://127.0.0.1:3000/play"
+            // href="https://flappybee-game-dapp.netlify.app/play"
+            // href={PDFBEETPaper}
+            // target="_blank"
+            // rel="noopener noreferrer"
+            // style={{ textDecoration: "none" }}
+          > */}
+          <ButtonPlay
+            onClick={() => {
+              handleOpenPDF();
+            }}
+          >
+            BEET Paper
+          </ButtonPlay>
+          {/* </a> */}
         </SectionButtonPlay>
         <IconFlyingBee01>
           <img src={imgFlyingBee} width={"100%"} alt="" />
@@ -141,8 +161,12 @@ const SectionButtonPlay = styled(Box)`
   @media (max-width: 900px) {
     bottom: 50px;
   }
+  @media (max-width: 500px) {
+    flex-direction: column;
+    bottom: 10px;
+  }
   @media (max-width: 390px) {
-    bottom: 70px;
+    bottom: 50px;
   }
 `;
 
@@ -156,10 +180,11 @@ const ButtonPlay = styled(Box)`
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  margin: 0px 30px;
 
   color: #511900;
   text-align: center;
-  font-size: 7em;
+  font-size: 6em;
   font-family: Rowdies;
   font-weight: 300;
   line-height: 90px;
@@ -191,6 +216,11 @@ const ButtonPlay = styled(Box)`
     width: 200px;
     height: 55px;
     font-size: 5em;
+    margin: 0px 20px;
+  }
+  @media (max-width: 500px) {
+    flex-direction: column;
+    margin: 10px 0px;
   }
 `;
 
