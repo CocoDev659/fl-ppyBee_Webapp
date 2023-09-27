@@ -151,7 +151,6 @@ const ButtonSocialLink = styled(Box)`
     color: #a9d100;
   }
 
-  transition: 0.3s;
   @media (max-width: 1440px) {
     font-size: 2rem;
     width: 50px;

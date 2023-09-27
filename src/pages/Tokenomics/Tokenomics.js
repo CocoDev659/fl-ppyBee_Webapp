@@ -115,11 +115,11 @@ const SectionReward = styled(Box)`
     width: 290px;
     height: 50px;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     width: 230px;
     height: 40px;
   }
-  @media (max-width: 390px) {
+  @media (max-width: 500px) {
     width: 150px;
     height: 30px;
     top: 8%;
@@ -157,7 +157,7 @@ const SectionSupply = styled(Box)`
 
   transition: 0.3s;
   @media (max-width: 1600px) {
-    width: 450px; 
+    width: 450px;
     height: 100px;
   }
   @media (max-width: 1440px) {
@@ -172,11 +172,11 @@ const SectionSupply = styled(Box)`
     width: 230px;
     height: 50px;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     width: 180px;
     height: 40px;
   }
-  @media (max-width: 390px) {
+  @media (max-width: 500px) {
     width: 130px;
     height: 30px;
   }
@@ -227,11 +227,11 @@ const SectionLiquidity = styled(Box)`
     width: 230px;
     height: 50px;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     width: 180px;
     height: 40px;
   }
-  @media (max-width: 390px) {
+  @media (max-width: 500px) {
     width: 130px;
     height: 30px;
   }
@@ -283,14 +283,14 @@ const SectionFarming = styled(Box)`
     width: 200px;
     height: 50px;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     width: 150px;
     height: 40px;
   }
-  @media (max-width: 390px) {
+  @media (max-width: 500px) {
     width: 120px;
     height: 30px;
-    top:53%;
+    top: 53%;
   }
   @media (max-width: 350px) {
     width: 100px;
@@ -340,11 +340,11 @@ const SectionEcosystem = styled(Box)`
     width: 200px;
     height: 50px;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     width: 150px;
     height: 40px;
   }
-  @media (max-width: 390px) {
+  @media (max-width: 500px) {
     width: 120px;
     height: 30px;
     top: 53%;
