@@ -21,7 +21,7 @@ const NFTs = () => {
         <a
           // href="http://127.0.0.1:3000/play"
           // href="https://flappybee-game-dapp.netlify.app/play"
-          href="https://app.flappybee.com"
+          href="https://app.flappybee.com/#/nft"
           target="_blank"
           rel="noopener noreferrer"
           style={{ textDecoration: "none" }}
@@ -120,7 +120,7 @@ const CartNFT = styled(Box)`
   transition: 0.3s;
   &:hover {
     > img {
-      box-shadow: 0px 0px 12px white;
+      box-shadow: 0px 0px 20px white;
     }
   }
 `;

@@ -12,6 +12,7 @@ import { useEffect } from "react";
 import ComingSoon from "./pages/ComingSoon/ComingSoon";
 import { useState } from "react";
 import NFTs from "./pages/NFTs/NFTs";
+import TokenInfo from "./pages/TokenInformation/TokenInfo";
 
 const App = () => {
   const [isLoading, setLoading] = useState(true);
@@ -28,7 +29,6 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    console.log(isLoading);
     someRequest().then(() => {
       const loaderElement = document.querySelector(".content_ring");
       if (loaderElement) {
@@ -50,6 +50,7 @@ const App = () => {
       <Utilities />
       <NFTs />
       <Tokenomics />
+      <TokenInfo />
       <Roadmap />
       <ComingSoon />
       <Footer />
