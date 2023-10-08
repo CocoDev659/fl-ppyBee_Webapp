@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.46def550.css",
-    "main.js": "/static/js/main.568ffdd6.js",
+    "main.js": "/static/js/main.ee22b2b9.js",
     "static/js/787.50d9ff37.chunk.js": "/static/js/787.50d9ff37.chunk.js",
     "static/media/FLAPPYBEE.pdf": "/static/media/FLAPPYBEE.0642c83124b095a22b0a.pdf",
-    "static/media/imgHome.png": "/static/media/imgHome.b682a6ba0d714470184e.png",
+    "static/media/imgHome.png": "/static/media/imgHome.b28ec9555da69504274b.png",
     "static/media/backSky.png": "/static/media/backSky.c20685ce6e266b6b6c9c.png",
     "static/media/Bee01.png": "/static/media/Bee01.b341fb5114ed2c4f32ee.png",
     "static/media/wide.png": "/static/media/wide.1d10a651d11c10cf10af.png",
@@ -17,11 +17,11 @@
     "static/media/Apple.svg": "/static/media/Apple.706ec3676c9da7814746e3620247139d.svg",
     "static/media/GooglePlay.svg": "/static/media/GooglePlay.98cb96e35770cb6fbe0e49d293a218f7.svg",
     "main.46def550.css.map": "/static/css/main.46def550.css.map",
-    "main.568ffdd6.js.map": "/static/js/main.568ffdd6.js.map",
+    "main.ee22b2b9.js.map": "/static/js/main.ee22b2b9.js.map",
     "787.50d9ff37.chunk.js.map": "/static/js/787.50d9ff37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.46def550.css",
-    "static/js/main.568ffdd6.js"
+    "static/js/main.ee22b2b9.js"
   ]
 }
