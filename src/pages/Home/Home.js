@@ -209,7 +209,7 @@ const SectionButtonPlay = styled(Box)`
   left: 50%;
   bottom: 90px;
   transform: translateX(-50%);
-
+  z-index: 1000;
   transition: 0.3s;
   @media (max-width: 1024px) {
     bottom: 70px;
@@ -244,7 +244,7 @@ const ButtonPlay = styled(Box)`
   font-family: Rowdies;
   font-weight: 300;
   line-height: 90px;
-
+  z-index: 1000;
   cursor: pointer;
   user-select: none;
   transition: 0.3s;
@@ -287,78 +287,96 @@ const IconFlyingBee01 = styled(Box)`
   top: 50%;
   transform: translate(-50%, -50%);
   transform: scaleX(-1);
-  width: 140px;
-
+  width: 120px;
+  z-index: 90;
   transition: 0.3s;
   @media (max-width: 1440px) {
     width: 95px;
   }
   @media (max-width: 1024px) {
     width: 80px;
+    left: 51%;
+    top: 52%;
   }
   @media (max-width: 768px) {
     width: 60px;
+    left: 53%;
+    top: 53%;
   }
   @media (max-width: 500px) {
-    left: 75%;
-    top: 60%;
+    left: 54%;
+    top: 53%;
   }
   @media (max-width: 390px) {
     width: 80px;
+    left: 52%;
+    top: 51%;
   }
 `;
 
 const IconFlyingBee02 = styled(Box)`
   display: flex;
   position: absolute;
-  left: 40%;
-  top: 40%;
+  left: 82%;
+  top: 60%;
   transform: scaleX(-1);
-  width: 110px;
-
+  width: 80px;
+  z-index: 90;
   transition: 0.3s;
   @media (max-width: 1440px) {
     width: 75px;
   }
   @media (max-width: 1024px) {
     width: 60px;
+    left: 80%;
+    top: 62%;
   }
   @media (max-width: 768px) {
     width: 45px;
+    left: 91%;
+    top: 65%;
   }
   @media (max-width: 500px) {
-    left: 50%;
-    top: 50%;
+    left: 88%;
+    top: 40%;
   }
   @media (max-width: 390px) {
     width: 60px;
+    left: 87%;
+    top: 62%;
   }
 `;
 
 const IconFlyingBee03 = styled(Box)`
   display: flex;
   position: absolute;
-  left: 20%;
-  top: 50%;
+  left: 21%;
+  top: 58%;
   transform: scaleX(-1);
-  width: 180px;
-
+  width: 160px;
+  z-index: 90;
   transition: 0.3s;
   @media (max-width: 1440px) {
     width: 110px;
   }
   @media (max-width: 1024px) {
     width: 90px;
+    left: 11%;
+    top: 60%;
   }
   @media (max-width: 768px) {
     width: 70px;
+    left: 27%;
+    top: 47%;
   }
   @media (max-width: 500px) {
-    left: 25%;
-    top: 60%;
+    left: 15%;
+    top: 47%;
   }
   @media (max-width: 390px) {
     width: 90px;
+    left: 2%;
+    top: 47%;
   }
 `;
 
