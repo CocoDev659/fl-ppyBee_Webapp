@@ -5,12 +5,12 @@ import imgHomeBackSmall from "../../assets/images/background/imgHome_small.png";
 import imgButtonWide from "../../assets/images/button/wide.png";
 import imgFlyingBee from "../../assets/images/icon/flyingbeeanimation.gif";
 import useProgressiveImg from "../../components/Image/ImageLoadEffect";
-import PDFBEETPaper from "../../assets/pdf/FLAPPYBEE.pdf";
+// import PDFBEETPaper from "../../assets/pdf/FLAPPYBEE.pdf";
 
 const Home = () => {
   const [src, { blur }] = useProgressiveImg(imgHomeBackSmall, imgHomeBack);
   const handleOpenPDF = () => {
-    window.open(PDFBEETPaper);
+    window.open('/FLAPPYBEE.pdf');
   };
 
   return (
