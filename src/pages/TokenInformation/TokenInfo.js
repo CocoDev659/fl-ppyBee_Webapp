@@ -31,6 +31,18 @@ const TokenInfo = () => {
           <TextDescriptionEach>Contract Type : ERC20</TextDescriptionEach>
         </SectionCenter>
       </SectionCard>
+      <SectionAudit data-aos="fade-up" data-aos-duration="2000">
+        <ButtonAudit
+          onClick={() => {
+            window.open(
+              "https://blocksafu.com/audit/0x9E1f90970D6cbDdf193F418281612B7aF563985A"
+              // "_self"
+            );
+          }}
+        >
+          SEE TOKEN AUDIT
+        </ButtonAudit>
+      </SectionAudit>
     </StyledComponent>
   );
 };
@@ -129,6 +141,62 @@ const TextDescriptionEach = styled(Box)`
   }
   @media (max-width: 390px) {
     margin-top: 10px;
+  }
+`;
+
+const SectionAudit = styled(Box)`
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    margin-top: 80px;
+  }
+  @media (max-width: 1024px) {
+    margin-top: 70px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 60px;
+  }
+  @media (max-width: 500px) {
+    margin-top: 50px;
+  }
+  @media (max-width: 390px) {
+    margin-top: 40px;
+  }
+`;
+
+const ButtonAudit = styled(Box)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 35px;
+  background-color: white;
+  color: #003d28;
+  cursor: pointer;
+  user-select: none;
+  font-size: 2.5rem;
+  margin-left: 20px;
+
+  &:hover {
+    color: #a9d100;
+  }
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+    padding: 8px 25px;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+    padding: 6px 20px;
+  }
+  @media (max-width: 390px) {
   }
 `;
 
