@@ -50,7 +50,7 @@ const TokenInfo = () => {
         </ButtonBlockSAFUAudit>
         <ButtonAudit
           onClick={() => {
-            return NotificationManager.info("Comming soon.", "", 3000);
+            return NotificationManager.warning("Comming soon.", "", 3000);
             // window.open(
             //   "https://blocksafu.com/audit/0x9E1f90970D6cbDdf193F418281612B7aF563985A"
             // );
