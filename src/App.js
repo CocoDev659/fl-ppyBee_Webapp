@@ -13,6 +13,8 @@ import ComingSoon from "./pages/ComingSoon/ComingSoon";
 import { useState } from "react";
 import NFTs from "./pages/NFTs/NFTs";
 import TokenInfo from "./pages/TokenInformation/TokenInfo";
+import { NotificationContainer } from "react-notifications";
+import "react-notifications/lib/notifications.css";
 
 const App = () => {
   const [isLoading, setLoading] = useState(true);
@@ -54,6 +56,7 @@ const App = () => {
       <Roadmap />
       <ComingSoon />
       <Footer />
+      <NotificationContainer />
     </StyledComponent>
   );
 };

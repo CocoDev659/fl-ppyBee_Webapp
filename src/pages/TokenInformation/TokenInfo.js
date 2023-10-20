@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Box } from "@mui/material";
 import imgSolidproof from "../../assets/images/icon/solidproof.png";
 import imgBlockSafu from "../../assets/images/icon/blocksafu.png";
+import { NotificationManager } from "react-notifications";
 
 const TokenInfo = () => {
   return (
@@ -49,6 +50,7 @@ const TokenInfo = () => {
         </ButtonBlockSAFUAudit>
         <ButtonAudit
           onClick={() => {
+            return NotificationManager.info("Comming soon.", "", 3000);
             // window.open(
             //   "https://blocksafu.com/audit/0x9E1f90970D6cbDdf193F418281612B7aF563985A"
             // );
