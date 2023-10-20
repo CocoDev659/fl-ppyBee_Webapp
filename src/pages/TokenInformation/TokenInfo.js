@@ -40,7 +40,16 @@ const TokenInfo = () => {
             );
           }}
         >
-          SEE TOKEN AUDIT
+          Blocksafu Audit
+        </ButtonAudit>
+        <ButtonAudit
+          onClick={() => {
+            // window.open(
+            //   "https://blocksafu.com/audit/0x9E1f90970D6cbDdf193F418281612B7aF563985A"
+            // );
+          }}
+        >
+          Solidproof Audit
         </ButtonAudit>
       </SectionAudit>
     </StyledComponent>
@@ -161,6 +170,7 @@ const SectionAudit = styled(Box)`
   }
   @media (max-width: 500px) {
     margin-top: 50px;
+    flex-direction: column;
   }
   @media (max-width: 390px) {
     margin-top: 40px;
@@ -196,7 +206,11 @@ const ButtonAudit = styled(Box)`
     font-size: 1.2rem;
     padding: 6px 20px;
   }
-  @media (max-width: 390px) {
+  @media (max-width: 500px) {
+    padding: unset;
+    width: 200px;
+    height: 40px;
+    margin-top: 15px;
   }
 `;
 
