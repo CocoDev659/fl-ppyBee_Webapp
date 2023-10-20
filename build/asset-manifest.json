@@ -1,12 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.46def550.css",
-    "main.js": "/static/js/main.2da3d235.js",
+    "main.js": "/static/js/main.f4bdd047.js",
     "static/js/787.50d9ff37.chunk.js": "/static/js/787.50d9ff37.chunk.js",
     "static/media/imgHome.png": "/static/media/imgHome.b28ec9555da69504274b.png",
     "static/media/backSky.png": "/static/media/backSky.c20685ce6e266b6b6c9c.png",
+    "static/media/blocksafu.png": "/static/media/blocksafu.763a0d1d232a8eff2e29.png",
     "static/media/Bee01.png": "/static/media/Bee01.b341fb5114ed2c4f32ee.png",
     "static/media/wide.png": "/static/media/wide.1d10a651d11c10cf10af.png",
+    "static/media/solidproof.png": "/static/media/solidproof.1d05587fe47cc884988f.png",
     "static/media/flyingbeeanimation.gif": "/static/media/flyingbeeanimation.99beebea5022071dbfff.gif",
     "static/media/imgHome_small.png": "/static/media/imgHome_small.c72d6131575d40e9ad47.png",
     "static/media/coin01.png": "/static/media/coin01.77086f479792183aedf1.png",
@@ -16,11 +18,11 @@
     "static/media/Apple.svg": "/static/media/Apple.706ec3676c9da7814746e3620247139d.svg",
     "static/media/GooglePlay.svg": "/static/media/GooglePlay.98cb96e35770cb6fbe0e49d293a218f7.svg",
     "main.46def550.css.map": "/static/css/main.46def550.css.map",
-    "main.2da3d235.js.map": "/static/js/main.2da3d235.js.map",
+    "main.f4bdd047.js.map": "/static/js/main.f4bdd047.js.map",
     "787.50d9ff37.chunk.js.map": "/static/js/787.50d9ff37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.46def550.css",
-    "static/js/main.2da3d235.js"
+    "static/js/main.f4bdd047.js"
   ]
 }

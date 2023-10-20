@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { Box } from "@mui/material";
+import imgSolidproof from "../../assets/images/icon/solidproof.png";
+import imgBlockSafu from "../../assets/images/icon/blocksafu.png";
 
 const TokenInfo = () => {
   return (
@@ -32,7 +34,7 @@ const TokenInfo = () => {
         </SectionCenter>
       </SectionCard>
       <SectionAudit data-aos="fade-up" data-aos-duration="2000">
-        <ButtonAudit
+        <ButtonBlockSAFUAudit
           onClick={() => {
             window.open(
               "https://blocksafu.com/audit/0x9E1f90970D6cbDdf193F418281612B7aF563985A"
@@ -40,8 +42,11 @@ const TokenInfo = () => {
             );
           }}
         >
-          Blocksafu Audit
-        </ButtonAudit>
+          <IconAudit>
+            <img src={imgBlockSafu} width={"100%"} height={"100%"} alt="" />
+          </IconAudit>
+          <TextBlockSAFUAudit>BlockSAFU Audit</TextBlockSAFUAudit>
+        </ButtonBlockSAFUAudit>
         <ButtonAudit
           onClick={() => {
             // window.open(
@@ -49,7 +54,10 @@ const TokenInfo = () => {
             // );
           }}
         >
-          Solidproof Audit
+          <IconAudit>
+            <img src={imgSolidproof} width={"100%"} height={"100%"} alt="" />
+          </IconAudit>
+          <TextAudit>Solidproof Audit</TextAudit>
         </ButtonAudit>
       </SectionAudit>
     </StyledComponent>
@@ -184,7 +192,7 @@ const ButtonAudit = styled(Box)`
   font-weight: bold;
   padding: 10px 30px;
   border-radius: 35px;
-  background-color: white;
+  background-color: #2b6acf;
   color: #003d28;
   cursor: pointer;
   user-select: none;
@@ -192,7 +200,10 @@ const ButtonAudit = styled(Box)`
   margin-left: 20px;
 
   &:hover {
-    color: #a9d100;
+    box-shadow: 0px 0px 20px #2b6acf;
+  }
+  &:active {
+    transform: scale(0.95);
   }
   transition: 0.3s;
   @media (max-width: 1440px) {
@@ -211,6 +222,106 @@ const ButtonAudit = styled(Box)`
     width: 200px;
     height: 40px;
     margin-top: 15px;
+  }
+`;
+
+const ButtonBlockSAFUAudit = styled(Box)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 35px;
+  background-color: white;
+  color: #003d28;
+  cursor: pointer;
+  user-select: none;
+  font-size: 2.5rem;
+  margin-left: 20px;
+  &:hover {
+    box-shadow: 0px 0px 15px white;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+    padding: 8px 25px;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+    padding: 6px 20px;
+  }
+  @media (max-width: 500px) {
+    padding: unset;
+    width: 200px;
+    height: 40px;
+    margin-top: 15px;
+  }
+`;
+
+const IconAudit = styled(Box)`
+  display: flex;
+  width: 30px;
+  margin-right: 10px;
+
+  transition: 0.3s;
+
+  @media (max-width: 1024px) {
+    width: 25px;
+    margin-right: 8px;
+  }
+  @media (max-width: 768px) {
+    width: 20px;
+    margin-right: 8px;
+  }
+  @media (max-width: 500px) {
+    width: 18px;
+    margin-right: 6px;
+  }
+`;
+
+const TextBlockSAFUAudit = styled(Box)`
+  font-weight: bold;
+  color: #0c325f;
+  cursor: pointer;
+  user-select: none;
+  font-size: 2.5rem;
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+  @media (max-width: 500px) {
+  }
+`;
+
+const TextAudit = styled(Box)`
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  font-size: 2.5rem;
+  transition: 0.3s;
+  @media (max-width: 1440px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+  @media (max-width: 500px) {
   }
 `;
 
