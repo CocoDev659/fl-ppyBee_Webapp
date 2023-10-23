@@ -50,10 +50,10 @@ const TokenInfo = () => {
         </ButtonBlockSAFUAudit>
         <ButtonAudit
           onClick={() => {
-            return NotificationManager.warning("Comming soon.", "", 3000);
-            // window.open(
-            //   "https://blocksafu.com/audit/0x9E1f90970D6cbDdf193F418281612B7aF563985A"
-            // );
+            // return NotificationManager.warning("Comming soon.", "", 3000);
+            window.open(
+              "https://app.solidproof.io/projects/flappy-bee?audit_id=746"
+            );
           }}
         >
           <IconAudit>
