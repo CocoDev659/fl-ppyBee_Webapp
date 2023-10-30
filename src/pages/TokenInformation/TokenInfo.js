@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Box } from "@mui/material";
 import imgSolidproof from "../../assets/images/icon/solidproof.png";
 import imgBlockSafu from "../../assets/images/icon/blocksafu.png";
-import { NotificationManager } from "react-notifications";
+// import { NotificationManager } from "react-notifications";
 
 const TokenInfo = () => {
   return (
@@ -10,7 +10,7 @@ const TokenInfo = () => {
       <TextSubject data-aos="zoom-in" data-aos-duration="1000">
         Token Information
       </TextSubject>
-      <SectionCard data-aos="fade-up" data-aos-duration="2000">
+      <SectionCard data-aos="zoom-in" data-aos-duration="1000">
         <SectionCenter>
           <TextDescriptionEach>Token Name : FlappyBee</TextDescriptionEach>
           <TextDescriptionEach>Token Symbol : BEET</TextDescriptionEach>
@@ -34,8 +34,10 @@ const TokenInfo = () => {
           <TextDescriptionEach>Contract Type : ERC20</TextDescriptionEach>
         </SectionCenter>
       </SectionCard>
-      <SectionAudit data-aos="fade-up" data-aos-duration="2000">
+      <SectionAudit>
         <ButtonBlockSAFUAudit
+          data-aos="fade-right"
+          data-aos-duration="2000"
           onClick={() => {
             window.open(
               "https://blocksafu.com/audit/0x9E1f90970D6cbDdf193F418281612B7aF563985A"
@@ -49,6 +51,8 @@ const TokenInfo = () => {
           <TextBlockSAFUAudit>BlockSAFU Audit</TextBlockSAFUAudit>
         </ButtonBlockSAFUAudit>
         <ButtonAudit
+          data-aos="fade-left"
+          data-aos-duration="2000"
           onClick={() => {
             // return NotificationManager.warning("Comming soon.", "", 3000);
             window.open(
