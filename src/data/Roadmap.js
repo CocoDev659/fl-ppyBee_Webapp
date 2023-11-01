@@ -27,7 +27,7 @@ export const dataRoadmap = [
     flagDone: false,
   },
   {
-    title: "Q1-Q4 2024",
+    title: "Q1- 2024",
     icon: <FaFortAwesome />,
     content: [
       "NFT marketplace",
