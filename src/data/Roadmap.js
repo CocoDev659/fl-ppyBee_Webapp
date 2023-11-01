@@ -1,7 +1,7 @@
 import { FaLaptopCode, FaLayerGroup, FaFortAwesome } from "react-icons/fa";
 export const dataRoadmap = [
   {
-    title: "Q1  2023",
+    title: "Q1-Q3 2023",
     icon: <FaLaptopCode />,
     content: [
       "Development of Website",
@@ -13,7 +13,7 @@ export const dataRoadmap = [
     flagDone: true,
   },
   {
-    title: "Q2  2023",
+    title: "Q4 2023",
     icon: <FaLayerGroup />,
     content: [
       "Lite paper Release",
@@ -27,7 +27,7 @@ export const dataRoadmap = [
     flagDone: false,
   },
   {
-    title: "Q3  2023",
+    title: "Q1-Q4 2024",
     icon: <FaFortAwesome />,
     content: [
       "NFT marketplace",

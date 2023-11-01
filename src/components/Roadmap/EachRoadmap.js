@@ -5,14 +5,14 @@ const SectionEachRoadMap = ({ data, flagDirect }) => {
   return (
     <StyledComponent>
       <SectionContent>
-        <TextTitle>{data.title}</TextTitle>
         <SectionIcon flag={data.flagDone ? 1 : 0}>
           {data.icon}
           {flagDirect ? (
             <SectionDirect flag={data.flagDone ? 1 : 0}></SectionDirect>
-          ) : (   
+          ) : (
             <></>
           )}
+          <TextTitle>{data.title}</TextTitle>
         </SectionIcon>
         <SectionTextContent>
           {data.content.map((each, index) => {
@@ -31,12 +31,13 @@ const SectionEachRoadMap = ({ data, flagDirect }) => {
 
 const StyledComponent = styled(Box)`
   display: flex;
-  flex-direction: column;
   margin-bottom: 140px;
+  margin-left: 200px;
 
   transition: 0.3s;
   @media (max-width: 1024px) {
     margin-bottom: 120px;
+    margin-left: 100px;
   }
 
   @media (max-width: 768px) {
@@ -44,11 +45,15 @@ const StyledComponent = styled(Box)`
   }
   @media (max-width: 500px) {
     margin-bottom: 95px;
+    margin-left: 50px;
   }
   @media (max-width: 390px) {
     margin-bottom: 85px;
+    margin-left: 50px;
   }
-
+  @media (max-width: 350px) {
+    margin-left: 30px;
+  }
 `;
 
 const SectionContent = styled(Box)`
@@ -57,11 +62,34 @@ const SectionContent = styled(Box)`
 `;
 
 const TextTitle = styled(Box)`
+  display: flex;
+  position: absolute;
   color: #fff;
-  text-align: right;
-  font-size: 3em;
+  /* text-align: right; */
+  font-size: 30px;
   font-family: Rowdies;
-  line-height: 40px;
+  text-wrap: nowrap;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 180px;
+
+  transition: 0.3s;
+  @media (max-width: 1024px) {
+    font-size: 25px;
+    right: 130px;
+  }
+
+  @media (max-width: 700px) {
+    text-wrap: balance;
+    font-size: 20px;
+  }
+
+  @media (max-width: 500px) {
+    right: 100px;
+  }
+  @media (max-width: 390px) {
+    right: 80px;
+  }
 `;
 
 const SectionIcon = styled(Box)`
