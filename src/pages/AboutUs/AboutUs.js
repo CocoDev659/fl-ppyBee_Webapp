@@ -6,7 +6,11 @@ import imgBee from "../../assets/images/icon/Bee01.png";
 const AboutUs = () => {
   return (
     <StyledComponent>
-      <SectionLeft data-aos="fade-right" data-aos-duration="2000">
+      <SectionLeft
+        data-aos="fade-right"
+        data-aos-duration="2000"
+        // data-aos-once='true'
+      >
         <TextAboutUs>About us</TextAboutUs>
         <TextDescriptionEach>
           FlappyBee combines the game charm of "Flappy Bird" with cutting-edge
