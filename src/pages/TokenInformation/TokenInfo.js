@@ -35,36 +35,37 @@ const TokenInfo = () => {
         </SectionCenter>
       </SectionCard>
       <SectionAudit>
-        <ButtonBlockSAFUAudit
-          data-aos="fade-right"
-          data-aos-duration="2000"
-          onClick={() => {
-            window.open(
-              "https://blocksafu.com/audit/0x9E1f90970D6cbDdf193F418281612B7aF563985A"
-              // "_self"
-            );
-          }}
-        >
-          <IconAudit>
-            <img src={imgBlockSafu} width={"100%"} height={"100%"} alt="" />
-          </IconAudit>
-          <TextBlockSAFUAudit>BlockSAFU Audit</TextBlockSAFUAudit>
-        </ButtonBlockSAFUAudit>
-        <ButtonAudit
-          data-aos="fade-left"
-          data-aos-duration="2000"
-          onClick={() => {
-            // return NotificationManager.warning("Comming soon.", "", 3000);
-            window.open(
-              "https://app.solidproof.io/projects/flappy-bee?audit_id=746"
-            );
-          }}
-        >
-          <IconAudit>
-            <img src={imgSolidproof} width={"100%"} height={"100%"} alt="" />
-          </IconAudit>
-          <TextAudit>Solidproof Audit</TextAudit>
-        </ButtonAudit>
+        <Box display={"flex"} data-aos="fade-right" data-aos-duration="2000">
+          <ButtonBlockSAFUAudit
+            onClick={() => {
+              window.open(
+                "https://blocksafu.com/audit/0x9E1f90970D6cbDdf193F418281612B7aF563985A"
+                // "_self"
+              );
+            }}
+          >
+            <IconAudit>
+              <img src={imgBlockSafu} width={"100%"} height={"100%"} alt="" />
+            </IconAudit>
+            <TextBlockSAFUAudit>BlockSAFU Audit</TextBlockSAFUAudit>
+          </ButtonBlockSAFUAudit>
+        </Box>
+
+        <Box display={"flex"} data-aos="fade-left" data-aos-duration="2000">
+          <ButtonAudit
+            onClick={() => {
+              // return NotificationManager.warning("Comming soon.", "", 3000);
+              window.open(
+                "https://app.solidproof.io/projects/flappy-bee?audit_id=746"
+              );
+            }}
+          >
+            <IconAudit>
+              <img src={imgSolidproof} width={"100%"} height={"100%"} alt="" />
+            </IconAudit>
+            <TextAudit>Solidproof Audit</TextAudit>
+          </ButtonAudit>
+        </Box>
       </SectionAudit>
     </StyledComponent>
   );
@@ -182,7 +183,7 @@ const SectionAudit = styled(Box)`
   @media (max-width: 768px) {
     margin-top: 60px;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     margin-top: 50px;
     flex-direction: column;
   }
@@ -203,7 +204,7 @@ const ButtonAudit = styled(Box)`
   cursor: pointer;
   user-select: none;
   font-size: 2.5rem;
-  margin-left: 20px;
+  margin-left: 30px;
 
   &:hover {
     box-shadow: 0px 0px 20px #2b6acf;
@@ -223,10 +224,11 @@ const ButtonAudit = styled(Box)`
     font-size: 1.2rem;
     padding: 6px 20px;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     padding: unset;
     width: 200px;
     height: 40px;
+    margin-left: 0px;
     margin-top: 15px;
   }
 `;
@@ -243,14 +245,14 @@ const ButtonBlockSAFUAudit = styled(Box)`
   cursor: pointer;
   user-select: none;
   font-size: 2.5rem;
-  margin-left: 20px;
+  transition: 0.3s;
+
   &:hover {
     box-shadow: 0px 0px 15px white;
   }
   &:active {
     transform: scale(0.95);
   }
-  transition: 0.3s;
   @media (max-width: 1440px) {
     font-size: 2rem;
   }
@@ -262,7 +264,7 @@ const ButtonBlockSAFUAudit = styled(Box)`
     font-size: 1.2rem;
     padding: 6px 20px;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     padding: unset;
     width: 200px;
     height: 40px;
