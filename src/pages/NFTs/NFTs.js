@@ -114,7 +114,8 @@ const CartNFT = styled(Box)`
   flex: 1;
   > img {
     border-radius: 4px;
-    width: 100%;  transition: 0.3s;
+    width: 100%;
+    transition: 0.3s;
   }
   border-radius: 4px;
   transition: 0.3s;
@@ -163,6 +164,7 @@ const ButtonPlay = styled(Box)`
   transition: 0.3s;
   &:hover {
     color: white;
+    text-shadow: 0px 0px 12px white;
   }
   &:active {
     transform: scale(0.9);

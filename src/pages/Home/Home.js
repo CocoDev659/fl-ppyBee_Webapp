@@ -10,7 +10,7 @@ import useProgressiveImg from "../../components/Image/ImageLoadEffect";
 const Home = () => {
   const [src, { blur }] = useProgressiveImg(imgHomeBackSmall, imgHomeBack);
   const handleOpenPDF = () => {
-    window.open('/FLAPPYBEE.pdf');
+    window.open("/FLAPPYBEE.pdf");
   };
 
   return (
@@ -39,7 +39,7 @@ const Home = () => {
             rel="noopener noreferrer"
             style={{ textDecoration: "none" }}
           >
-            <ButtonPlay>Launch App</ButtonPlay>
+            <ButtonPlay>Play the Game</ButtonPlay>
           </a>
           {/* <a
             // href="http://127.0.0.1:3000/play"
@@ -240,7 +240,7 @@ const ButtonPlay = styled(Box)`
 
   color: #511900;
   text-align: center;
-  font-size: 6em;
+  font-size: 5.5em;
   font-family: Rowdies;
   font-weight: 300;
   line-height: 90px;
@@ -250,6 +250,7 @@ const ButtonPlay = styled(Box)`
   transition: 0.3s;
   &:hover {
     color: white;
+    text-shadow: 0px 0px 12px white;
   }
   &:active {
     transform: scale(0.9);
