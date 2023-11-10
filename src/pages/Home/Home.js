@@ -56,6 +56,15 @@ const Home = () => {
           >
             BEET Paper
           </ButtonPlay>
+          <ButtonPlay
+            onClick={() => {
+              window.open(
+                "https://www.pinksale.finance/launchpad/0xb4BBdFe024c61183037725800A1C76bc70fd7043?chain=ETH"
+              );
+            }}
+          >
+            Buy BEET
+          </ButtonPlay>
           {/* </a> */}
         </SectionButtonPlay>
         <IconFlyingBee01>
@@ -217,12 +226,12 @@ const SectionButtonPlay = styled(Box)`
   @media (max-width: 900px) {
     bottom: 50px;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     flex-direction: column;
-    bottom: 10px;
+    bottom: 50px;
   }
   @media (max-width: 390px) {
-    bottom: 50px;
+    /* bottom: 30px; */
   }
 `;
 
@@ -262,22 +271,35 @@ const ButtonPlay = styled(Box)`
     height: 115px;
   }
   @media (max-width: 1440px) {
-    width: 360px;
-    height: 100px;
+    width: 290px;
+    height: 90px;
   }
-  @media (max-width: 1024px) {
+  /* @media (max-width: 1024px) {
     width: 300px;
     height: 80px;
-  }
-  @media (max-width: 768px) {
-    width: 200px;
+  } */
+  /* @media (max-width: 1400px) {
+    width: 250px;
     height: 55px;
     font-size: 5em;
     margin: 0px 20px;
+  } */
+  @media (max-width: 1024px) {
+    width: 210px;
+    height: 55px;
+    font-size: 4.2em;
+    margin: 0px 10px;
   }
-  @media (max-width: 500px) {
-    flex-direction: column;
+  @media (max-width: 700px) {
     margin: 10px 0px;
+    width: 280px;
+    height: 60px;
+    font-size: 5em;
+  }
+  @media (max-width: 390px) {
+    width: 250px;
+    height: 55px;
+    font-size: 4.5em;
   }
 `;
 
