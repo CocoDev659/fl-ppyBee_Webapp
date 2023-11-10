@@ -63,7 +63,7 @@ const Home = () => {
               );
             }}
           >
-            Buy BEET
+            Buy $BEET
           </ButtonPlay>
           {/* </a> */}
         </SectionButtonPlay>
