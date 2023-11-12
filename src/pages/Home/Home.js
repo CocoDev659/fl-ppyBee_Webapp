@@ -39,7 +39,7 @@ const Home = () => {
             rel="noopener noreferrer"
             style={{ textDecoration: "none" }}
           >
-            <ButtonPlay>Play the Game</ButtonPlay>
+            <ButtonPlay>Launch App</ButtonPlay>
           </a>
           {/* <a
             // href="http://127.0.0.1:3000/play"
