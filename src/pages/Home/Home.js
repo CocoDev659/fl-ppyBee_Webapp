@@ -46,7 +46,7 @@ const Home = () => {
             // href="https://flappybee-game-dapp.netlify.app/play"
             // href={PDFBEETPaper}
             // target="_blank"
-            // rel="noopener noreferrer"
+            // rel="noopener noreferrer"#
             // style={{ textDecoration: "none" }}
           > */}
           <ButtonPlay
@@ -58,9 +58,9 @@ const Home = () => {
           </ButtonPlay>
           <ButtonPlay
             onClick={() => {
-              window.open(
-                "https://www.pinksale.finance/launchpad/0xb4BBdFe024c61183037725800A1C76bc70fd7043?chain=ETH"
-              );
+              // window.open(
+              //   "https://www.pinksale.finance/launchpad/0xb4BBdFe024c61183037725800A1C76bc70fd7043?chain=ETH"
+              // );
             }}
           >
             Buy $BEET
