@@ -19,6 +19,9 @@ const Partnerlist = () => {
       <TextSubject data-aos="zoom-in" data-aos-duration="1000">
         Flappybee Partners
       </TextSubject>
+      <TextSubjectDescription data-aos="zoom-in" data-aos-duration="1000">
+        We partnered with leaders in the crypto industry
+      </TextSubjectDescription>
       <SectionRoadmap>
         <CustomMarquee
           // className="rfm-overlay"
@@ -75,6 +78,24 @@ const TextSubject = styled(Box)`
   font-size: 8em;
   font-family: Rowdies;
   /* line-height: 110px; */
+`;
+
+const TextSubjectDescription = styled(Box)`
+  color: #fff;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 300;
+  font-family: Rowdies;
+  /* line-height: 110px; */
+  margin-top: 30px;
+
+  transition: 0.3s;
+  @media (max-width: 1024px) {
+    margin-top: 25px;
+  }
+  @media (max-width: 500px) {
+    margin-top: 20px;
+  }
 `;
 
 const SectionRoadmap = styled(Box)`
