@@ -15,6 +15,7 @@ import NFTs from "./pages/NFTs/NFTs";
 import TokenInfo from "./pages/TokenInformation/TokenInfo";
 import { NotificationContainer } from "react-notifications";
 import "react-notifications/lib/notifications.css";
+import Partnerlist from "./pages/Partnerlist/Partnerlist";
 
 const App = () => {
   const [isLoading, setLoading] = useState(true);
@@ -54,6 +55,7 @@ const App = () => {
       <Tokenomics />
       <TokenInfo />
       <Roadmap />
+      <Partnerlist />
       <ComingSoon />
       <Footer />
       <NotificationContainer />
