@@ -12,7 +12,7 @@ const AboutUs = () => {
         // data-aos-once='true'
       >
         <TextAboutUs>About us</TextAboutUs>
-        <TextDescriptionEach>
+        {/* <TextDescriptionEach>
           FlappyBee combines the game charm of "Flappy Bird" with cutting-edge
           Web3 blockchain tech. Join Flappy, the heroic bee, on a daring mission
           to save the queen. As a player, you're the wind beneath Flappy's
@@ -41,6 +41,37 @@ const AboutUs = () => {
           It's time to Embrace this exciting journey with Flappy. Help Flappy
           rescue the queen and discover the world of FlappyBee. The future of
           gaming is here. Let's fly together!
+        </TextDescriptionEach> */}
+        <TextDescriptionEach>
+          FlappyBee is a Play to Earn Game on the Ethereum blockchain, imitates
+          the minigame “Flappy Bird”. The ability to play with alternative
+          skins. These skins are realised as NFTs on the Ethereum Blockchain.
+        </TextDescriptionEach>
+        <TextDescriptionEach>
+          FlappyBee combines the game charm of "Flappy Bird" with cutting-edge
+          Web3 blockchain tech. Join Flappy, the heroic bee, on a daring mission
+          to save the queen. As a player, you're the wind beneath Flappy's
+          wings.
+        </TextDescriptionEach>
+        <TextDescriptionEach>
+          FlappyBee is more than a game; it's also an extra layer of economic
+          opportunity incloding Play2earn, NFTs Skins, NFTs Marketplace Farming
+          pools, Your playing skills translate into success. Join a vibrant
+          community of blockchain gaming enthusiasts.
+        </TextDescriptionEach>
+
+        <TextDescriptionEach>
+          Our gameplay mechanics and storyline promise great adventures. Flap
+          through obstacles, collect NFTs, tokens, and customize your journey
+          with the NFT. Compete on leaderboards but remember, the queen trusts
+          you to protect her.
+        </TextDescriptionEach>
+
+        <TextDescriptionEach>
+          Blockchain integration ensures transparency and security. BEET tokens
+          fuel your journey, making transactions, rewards, and staking a
+          seamless. NFTs let you showcase your achievements and for more
+          optimise customisation.
         </TextDescriptionEach>
       </SectionLeft>
       <SectionRight data-aos="fade-left" data-aos-duration="2000">
