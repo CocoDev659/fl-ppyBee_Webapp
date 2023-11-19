@@ -40,7 +40,10 @@ const Partnerlist = () => {
             image={imgLogoPinksale}
             link="https://www.pinksale.finance"
           />
-          <CustomPartnerLogo image={imgLogoDexview} link="https://www.dexview.com" />
+          <CustomPartnerLogo
+            image={imgLogoDexview}
+            link="https://www.dexview.com"
+          />
           <CustomPartnerLogo image={imgLogoBlockSAFU} link="" />
           <CustomPartnerLogo image={imgLogoSolidProof} link="" />
           <CustomPartnerLogo image={imgLogoEtherscan} link="" />
@@ -105,6 +108,7 @@ const SectionRoadmap = styled(Box)`
   flex-direction: column;
   width: 100%;
   margin-top: 150px;
+
   transition: 0.3s;
   @media (max-width: 1024px) {
     margin-top: 120px;
@@ -124,6 +128,7 @@ const SectionRoadmap = styled(Box)`
 `;
 
 const CustomMarquee = styled(Marquee)`
+  padding: 10px 0px;
   overflow: hidden !important;
   .rfm-overlay {
     --gradient-color: rgb(0, 61, 40) !important;
