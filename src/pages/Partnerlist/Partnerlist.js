@@ -2,16 +2,17 @@ import styled from "styled-components";
 import { Box } from "@mui/material";
 import Marquee from "react-fast-marquee";
 import CustomPartnerLogo from "../../components/Image/CustomPartnerLogo";
-import imgLogoCoinTiger from "../../assets/images/partner/cointiger.png";
-import imgLogoCMC from "../../assets/images/partner/cmc.png";
-import imgLogoCoinGecko from "../../assets/images/partner/coingecko.png";
-import imgLogoHyperPay from "../../assets/images/partner/HyperPay.svg";
-import imgLogoONTO from "../../assets/images/partner/ONTO.png";
-import imgLogoPinksale from "../../assets/images/partner/pinksale.png";
-import imgLogoDexview from "../../assets/images/partner/dexview.png";
-import imgLogoBlockSAFU from "../../assets/images/partner/blockSAFU.svg";
-import imgLogoSolidProof from "../../assets/images/partner/solidproof.png";
-import imgLogoEtherscan from "../../assets/images/partner/etherscan.svg";
+import imgLogoCoinTiger from "../../assets/images/partner/Cointiger.png";
+import imgLogoCMC from "../../assets/images/partner/coinmarketcap-logo.png";
+import imgLogoCoinGecko from "../../assets/images/partner/Coingecko.png";
+import imgLogoHyperPay from "../../assets/images/partner/Hyperpay.png";
+import imgLogoONTO from "../../assets/images/partner/onto-logo.png";
+import imgLogoSafePal from "../../assets/images/partner/safepal-logo.png";
+import imgLogoPinksale from "../../assets/images/partner/Pinksale logo.png";
+import imgLogoDexview from "../../assets/images/partner/DEXView.png";
+import imgLogoBlockSAFU from "../../assets/images/partner1/blockSAFU.svg";
+import imgLogoSolidProof from "../../assets/images/partner1/solidproof.png";
+import imgLogoEtherscan from "../../assets/images/partner/etherscan-logo.png";
 
 const Partnerlist = () => {
   return (
@@ -34,11 +35,12 @@ const Partnerlist = () => {
           <CustomPartnerLogo image={imgLogoCoinGecko} link="" />
           <CustomPartnerLogo image={imgLogoHyperPay} link="" />
           <CustomPartnerLogo image={imgLogoONTO} link="" />
+          <CustomPartnerLogo image={imgLogoSafePal} link="" />
           <CustomPartnerLogo
             image={imgLogoPinksale}
-            link="https://www.pinksale.finance/launchpad/0xA8DF2Dc4bD7CD771272654894f48AA7b78703072?chain=ETH"
+            link="https://www.pinksale.finance"
           />
-          <CustomPartnerLogo image={imgLogoDexview} link="" />
+          <CustomPartnerLogo image={imgLogoDexview} link="https://www.dexview.com" />
           <CustomPartnerLogo image={imgLogoBlockSAFU} link="" />
           <CustomPartnerLogo image={imgLogoSolidProof} link="" />
           <CustomPartnerLogo image={imgLogoEtherscan} link="" />

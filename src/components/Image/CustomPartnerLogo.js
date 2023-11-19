@@ -48,7 +48,7 @@ const StyledComponent = styled(Box)`
   &:hover {
     transform: scale(1.2);
   }
-  &:active{
+  &:active {
     transform: scale(1);
   }
 `;
