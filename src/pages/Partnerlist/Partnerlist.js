@@ -10,8 +10,8 @@ import imgLogoONTO from "../../assets/images/partner/onto-logo.png";
 import imgLogoSafePal from "../../assets/images/partner/safepal-logo.png";
 import imgLogoPinksale from "../../assets/images/partner/Pinksale logo.png";
 import imgLogoDexview from "../../assets/images/partner/DEXView.png";
-import imgLogoBlockSAFU from "../../assets/images/partner1/blockSAFU.svg";
-import imgLogoSolidProof from "../../assets/images/partner1/solidproof.png";
+// import imgLogoBlockSAFU from "../../assets/images/partner1/blockSAFU.svg";
+import imgLogoSolidProof from "../../assets/images/partner/SolidProof.png";
 import imgLogoEtherscan from "../../assets/images/partner/etherscan-logo.png";
 
 const Partnerlist = () => {
@@ -44,7 +44,7 @@ const Partnerlist = () => {
             image={imgLogoDexview}
             link="https://www.dexview.com"
           />
-          <CustomPartnerLogo image={imgLogoBlockSAFU} link="" />
+          {/* <CustomPartnerLogo image={imgLogoBlockSAFU} link="" /> */}
           <CustomPartnerLogo image={imgLogoSolidProof} link="" />
           <CustomPartnerLogo image={imgLogoEtherscan} link="" />
         </CustomMarquee>
