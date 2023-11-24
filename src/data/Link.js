@@ -7,6 +7,6 @@ export const dataSocialLink = [
   },
   {
     icon: <FaTwitter />,
-    linkUrl: "https://twitter.com/FlappyBee_BSC/status/1727448132873503169",
+    linkUrl: "https://twitter.com/FlappyBee_BSC",
   },
 ];

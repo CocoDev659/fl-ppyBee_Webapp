@@ -43,9 +43,9 @@ const AboutUs = () => {
           gaming is here. Let's fly together!
         </TextDescriptionEach> */}
         <TextDescriptionEach>
-          FlappyBee is a Play to Earn Game on the Binance Smart Chain (BSC), imitates
-          the minigame “Flappy Bird”. The ability to play with alternative
-          skins. These skins are realised as NFTs on the Binance Smart Chain (BSC).
+          FlappyBee is a Play to Earn Game on the BNB Smart Chain, imitates the
+          minigame “Flappy Bird”. The ability to play with alternative skins.
+          These skins are realised as NFTs on the BNB Smart Chain.
         </TextDescriptionEach>
         <TextDescriptionEach>
           FlappyBee combines the game charm of "Flappy Bird" with cutting-edge
