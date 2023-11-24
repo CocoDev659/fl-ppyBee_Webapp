@@ -3,10 +3,10 @@ import { FaTelegramPlane, FaTwitter } from "react-icons/fa";
 export const dataSocialLink = [
   {
     icon: <FaTelegramPlane />,
-    linkUrl: "https://t.me/FlappyBee_ETH",
+    linkUrl: "https://t.me/FlappyBee_BSC",
   },
   {
     icon: <FaTwitter />,
-    linkUrl: "https://twitter.com/FlappyBee_ETH",
+    linkUrl: "https://twitter.com/FlappyBee_BSC/status/1727448132873503169",
   },
 ];

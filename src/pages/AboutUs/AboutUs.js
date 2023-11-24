@@ -43,9 +43,9 @@ const AboutUs = () => {
           gaming is here. Let's fly together!
         </TextDescriptionEach> */}
         <TextDescriptionEach>
-          FlappyBee is a Play to Earn Game on the Ethereum blockchain, imitates
+          FlappyBee is a Play to Earn Game on the Binance Smart Chain (BSC), imitates
           the minigame “Flappy Bird”. The ability to play with alternative
-          skins. These skins are realised as NFTs on the Ethereum Blockchain.
+          skins. These skins are realised as NFTs on the Binance Smart Chain (BSC).
         </TextDescriptionEach>
         <TextDescriptionEach>
           FlappyBee combines the game charm of "Flappy Bird" with cutting-edge

@@ -23,7 +23,7 @@ export const dataUtilities = [
     icon: imgBee,
     textSubject: "Gaming NFTs",
     textContent:
-      "Flappy Bee imitates the minigame “Flappy Bird”. The ability to play with alternative skins. These skins are realised as NFTs on the Ethereum Blockchain.",
+      "Flappy Bee imitates the minigame “Flappy Bird”. The ability to play with alternative skins. These skins are realised as NFTs on the Binance Smart Chain (BSC).",
     button: "Buy NFTs",
     link: "https://app.flappybee.com/nft",
   },
