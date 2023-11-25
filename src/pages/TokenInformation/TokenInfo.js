@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Box } from "@mui/material";
 import imgSolidproof from "../../assets/images/icon/solidproof.png";
-import imgBlockSafu from "../../assets/images/icon/blocksafu.png";
+// import imgBlockSafu from "../../assets/images/icon/blocksafu.png";
 // import { NotificationManager } from "react-notifications";
 
 const TokenInfo = () => {
@@ -22,12 +22,12 @@ const TokenInfo = () => {
           <TextDescriptionEach>
             Contract Address : {"\u00a0"}
             <a
-              href="https://etherscan.io/token/0x9E1f90970D6cbDdf193F418281612B7aF563985A"
+              href="https://bscscan.com/address/0x4592a5C47bab8bc11C29deD59bFeACeA71F24536"
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "none", color: "white" }}
             >
-              0x9E1f...985A
+              0x4592...4536
             </a>
           </TextDescriptionEach>
           <TextDescriptionEach>Contract Verified? : Yes</TextDescriptionEach>
@@ -35,13 +35,13 @@ const TokenInfo = () => {
         </SectionCenter>
       </SectionCard>
       <SectionAudit>
-        <Box display={"flex"} data-aos="fade-right" data-aos-duration="2000">
+        {/* <Box display={"flex"} data-aos="fade-right" data-aos-duration="2000">
           <ButtonBlockSAFUAudit
             onClick={() => {
-              window.open(
-                "https://blocksafu.com/audit/0x9E1f90970D6cbDdf193F418281612B7aF563985A"
-                // "_self"
-              );
+              // window.open(
+              //   "https://blocksafu.com/audit/0x9E1f90970D6cbDdf193F418281612B7aF563985A"
+              //   // "_self"
+              // );
             }}
           >
             <IconAudit>
@@ -49,9 +49,9 @@ const TokenInfo = () => {
             </IconAudit>
             <TextBlockSAFUAudit>BlockSAFU Audit</TextBlockSAFUAudit>
           </ButtonBlockSAFUAudit>
-        </Box>
+        </Box> */}
 
-        <Box display={"flex"} data-aos="fade-left" data-aos-duration="2000">
+        <Box display={"flex"} data-aos="fade-up" data-aos-duration="2000">
           <ButtonAudit
             onClick={() => {
               // return NotificationManager.warning("Comming soon.", "", 3000);
@@ -185,7 +185,7 @@ const SectionAudit = styled(Box)`
   }
   @media (max-width: 600px) {
     margin-top: 50px;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   @media (max-width: 390px) {
     margin-top: 40px;
@@ -204,7 +204,6 @@ const ButtonAudit = styled(Box)`
   cursor: pointer;
   user-select: none;
   font-size: 2.5rem;
-  margin-left: 30px;
 
   &:hover {
     box-shadow: 0px 0px 20px #2b6acf;
@@ -226,51 +225,50 @@ const ButtonAudit = styled(Box)`
   }
   @media (max-width: 600px) {
     padding: unset;
-    width: 200px;
-    height: 40px;
+    width: 250px;
+    height: 50px;
     margin-left: 0px;
-    margin-top: 15px;
   }
 `;
 
-const ButtonBlockSAFUAudit = styled(Box)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  padding: 10px 30px;
-  border-radius: 35px;
-  background-color: white;
-  color: #003d28;
-  cursor: pointer;
-  user-select: none;
-  font-size: 2.5rem;
-  transition: 0.3s;
+// const ButtonBlockSAFUAudit = styled(Box)`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-weight: bold;
+//   padding: 10px 30px;
+//   border-radius: 35px;
+//   background-color: white;
+//   color: #003d28;
+//   cursor: pointer;
+//   user-select: none;
+//   font-size: 2.5rem;
+//   transition: 0.3s;
 
-  &:hover {
-    box-shadow: 0px 0px 15px white;
-  }
-  &:active {
-    transform: scale(0.95);
-  }
-  @media (max-width: 1440px) {
-    font-size: 2rem;
-  }
-  @media (max-width: 1024px) {
-    font-size: 1.5rem;
-    padding: 8px 25px;
-  }
-  @media (max-width: 768px) {
-    font-size: 1.2rem;
-    padding: 6px 20px;
-  }
-  @media (max-width: 600px) {
-    padding: unset;
-    width: 200px;
-    height: 40px;
-    margin-top: 15px;
-  }
-`;
+//   &:hover {
+//     box-shadow: 0px 0px 15px white;
+//   }
+//   &:active {
+//     transform: scale(0.95);
+//   }
+//   @media (max-width: 1440px) {
+//     font-size: 2rem;
+//   }
+//   @media (max-width: 1024px) {
+//     font-size: 1.5rem;
+//     padding: 8px 25px;
+//   }
+//   @media (max-width: 768px) {
+//     font-size: 1.2rem;
+//     padding: 6px 20px;
+//   }
+//   @media (max-width: 600px) {
+//     padding: unset;
+//     width: 200px;
+//     height: 40px;
+//     margin-top: 15px;
+//   }
+// `;
 
 const IconAudit = styled(Box)`
   display: flex;
@@ -293,25 +291,25 @@ const IconAudit = styled(Box)`
   }
 `;
 
-const TextBlockSAFUAudit = styled(Box)`
-  font-weight: bold;
-  color: #0c325f;
-  cursor: pointer;
-  user-select: none;
-  font-size: 2.5rem;
-  transition: 0.3s;
-  @media (max-width: 1440px) {
-    font-size: 2rem;
-  }
-  @media (max-width: 1024px) {
-    font-size: 1.5rem;
-  }
-  @media (max-width: 768px) {
-    font-size: 1.2rem;
-  }
-  @media (max-width: 500px) {
-  }
-`;
+// const TextBlockSAFUAudit = styled(Box)`
+//   font-weight: bold;
+//   color: #0c325f;
+//   cursor: pointer;
+//   user-select: none;
+//   font-size: 2.5rem;
+//   transition: 0.3s;
+//   @media (max-width: 1440px) {
+//     font-size: 2rem;
+//   }
+//   @media (max-width: 1024px) {
+//     font-size: 1.5rem;
+//   }
+//   @media (max-width: 768px) {
+//     font-size: 1.2rem;
+//   }
+//   @media (max-width: 500px) {
+//   }
+// `;
 
 const TextAudit = styled(Box)`
   font-weight: bold;

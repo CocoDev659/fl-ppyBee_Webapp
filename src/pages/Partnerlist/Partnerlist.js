@@ -36,17 +36,17 @@ const Partnerlist = () => {
           <CustomPartnerLogo image={imgLogoHyperPay} link="" />
           <CustomPartnerLogo image={imgLogoONTO} link="" />
           <CustomPartnerLogo image={imgLogoSafePal} link="" />
-          <CustomPartnerLogo
+          {/* <CustomPartnerLogo
             image={imgLogoPinksale}
             link="https://www.pinksale.finance"
-          />
+          /> */}
           <CustomPartnerLogo
             image={imgLogoDexview}
             link="https://www.dexview.com"
           />
           {/* <CustomPartnerLogo image={imgLogoBlockSAFU} link="" /> */}
           <CustomPartnerLogo image={imgLogoSolidProof} link="" />
-          <CustomPartnerLogo image={imgLogoEtherscan} link="" />
+          {/* <CustomPartnerLogo image={imgLogoEtherscan} link="" /> */}
         </CustomMarquee>
       </SectionRoadmap>
     </StyledComponent>
