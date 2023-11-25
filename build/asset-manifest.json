@@ -1,19 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.64938854.css",
-    "main.js": "/static/js/main.62ea5af0.js",
+    "main.js": "/static/js/main.1b8c165b.js",
     "static/js/787.50d9ff37.chunk.js": "/static/js/787.50d9ff37.chunk.js",
     "static/media/imgHome.png": "/static/media/imgHome.b28ec9555da69504274b.png",
     "static/media/backSky.png": "/static/media/backSky.c20685ce6e266b6b6c9c.png",
-    "static/media/SolidProof.png": "/static/media/SolidProof.5db15adfa60e05ec103d.png",
+    "static/media/SolidProof.png": "/static/media/SolidProof.6c2a286c00a65f91976c.png",
     "static/media/coinmarketcap-logo.png": "/static/media/coinmarketcap-logo.a1e4697840ac2ed1fd16.png",
+    "static/media/bscscan.png": "/static/media/bscscan.9fa4217c6446df1d7594.png",
     "static/media/Cointiger.png": "/static/media/Cointiger.811236308d0ffa225a76.png",
     "static/media/Coingecko.png": "/static/media/Coingecko.be27b94820c27a3764b7.png",
     "static/media/DEXView.png": "/static/media/DEXView.7f712b01b41dae50d359.png",
     "static/media/Hyperpay.png": "/static/media/Hyperpay.e324fbacff88a793d285.png",
     "static/media/safepal-logo.png": "/static/media/safepal-logo.ccb762c711497bf1c7d1.png",
-    "static/media/etherscan-logo.png": "/static/media/etherscan-logo.cb6710489a7486526c3d.png",
-    "static/media/Pinksale logo.png": "/static/media/Pinksale logo.2f7bacb8f283ef4c2f4c.png",
     "static/media/Bee01.png": "/static/media/Bee01.b341fb5114ed2c4f32ee.png",
     "static/media/wide.png": "/static/media/wide.1d10a651d11c10cf10af.png",
     "static/media/onto-logo.png": "/static/media/onto-logo.71a83ec35a5f9df64c04.png",
@@ -31,11 +30,11 @@
     "static/media/Apple.svg": "/static/media/Apple.706ec3676c9da7814746e3620247139d.svg",
     "static/media/GooglePlay.svg": "/static/media/GooglePlay.98cb96e35770cb6fbe0e49d293a218f7.svg",
     "main.64938854.css.map": "/static/css/main.64938854.css.map",
-    "main.62ea5af0.js.map": "/static/js/main.62ea5af0.js.map",
+    "main.1b8c165b.js.map": "/static/js/main.1b8c165b.js.map",
     "787.50d9ff37.chunk.js.map": "/static/js/787.50d9ff37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.64938854.css",
-    "static/js/main.62ea5af0.js"
+    "static/js/main.1b8c165b.js"
   ]
 }

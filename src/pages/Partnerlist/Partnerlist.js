@@ -8,11 +8,12 @@ import imgLogoCoinGecko from "../../assets/images/partner/Coingecko.png";
 import imgLogoHyperPay from "../../assets/images/partner/Hyperpay.png";
 import imgLogoONTO from "../../assets/images/partner/onto-logo.png";
 import imgLogoSafePal from "../../assets/images/partner/safepal-logo.png";
-import imgLogoPinksale from "../../assets/images/partner/Pinksale logo.png";
+// import imgLogoPinksale from "../../assets/images/partner/Pinksale logo.png";
 import imgLogoDexview from "../../assets/images/partner/DEXView.png";
 // import imgLogoBlockSAFU from "../../assets/images/partner1/blockSAFU.svg";
 import imgLogoSolidProof from "../../assets/images/partner/SolidProof.png";
-import imgLogoEtherscan from "../../assets/images/partner/etherscan-logo.png";
+// import imgLogoEtherscan from "../../assets/images/partner/etherscan-logo.png";
+import imgLogoBscscan from "../../assets/images/partner/bscscan.png";
 
 const Partnerlist = () => {
   return (
@@ -46,7 +47,10 @@ const Partnerlist = () => {
           />
           {/* <CustomPartnerLogo image={imgLogoBlockSAFU} link="" /> */}
           <CustomPartnerLogo image={imgLogoSolidProof} link="" />
-          {/* <CustomPartnerLogo image={imgLogoEtherscan} link="" /> */}
+          <CustomPartnerLogo
+            image={imgLogoBscscan}
+            link="https://bscscan.com/address/0x4592a5C47bab8bc11C29deD59bFeACeA71F24536"
+          />
         </CustomMarquee>
       </SectionRoadmap>
     </StyledComponent>
