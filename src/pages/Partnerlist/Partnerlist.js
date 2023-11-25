@@ -24,7 +24,7 @@ const Partnerlist = () => {
       <TextSubjectDescription data-aos="zoom-in" data-aos-duration="1000">
         We partnered with leaders in the crypto industry
       </TextSubjectDescription>
-      <SectionRoadmap>
+      <SectionRoadmap data-aos="zoom-in" data-aos-duration="1000">
         <CustomMarquee
           // className="rfm-overlay"
           gradient={true}

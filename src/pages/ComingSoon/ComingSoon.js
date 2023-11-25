@@ -10,24 +10,29 @@ const ComingSoon = () => {
         Coming Soon
       </TextSubject>
       <SectionComingSoon>
-        <SectionButtonAPP data-aos="fade-right" data-aos-duration="1000">
-          <SectionAppIcon>
-            <img src={imgIconGoogle} width={"100%"} alt="" />
-          </SectionAppIcon>
-          <SectionTextGroup>
-            <TextUp>GET IT ON</TextUp>
-            <TextDown>Google Play</TextDown>
-          </SectionTextGroup>
-        </SectionButtonAPP>
-        <SectionButtonAPP data-aos="fade-left" data-aos-duration="1000">
-          <SectionAppIcon>
-            <img src={imgIconApple} width={"100%"} alt="" />
-          </SectionAppIcon>
-          <SectionTextGroup>
-            <TextUp>Download on the</TextUp>
-            <TextDown>App Store</TextDown>
-          </SectionTextGroup>
-        </SectionButtonAPP>
+        <Box display={"flex"} data-aos="fade-right" data-aos-duration="1000">
+          <SectionButtonAPP>
+            <SectionAppIcon>
+              <img src={imgIconGoogle} width={"100%"} alt="" />
+            </SectionAppIcon>
+            <SectionTextGroup>
+              <TextUp>GET IT ON</TextUp>
+              <TextDown>Google Play</TextDown>
+            </SectionTextGroup>
+          </SectionButtonAPP>
+        </Box>
+
+        <Box display={"flex"} data-aos="fade-left" data-aos-duration="1000">
+          <SectionButtonAPP>
+            <SectionAppIcon>
+              <img src={imgIconApple} width={"100%"} alt="" />
+            </SectionAppIcon>
+            <SectionTextGroup>
+              <TextUp>Download on the</TextUp>
+              <TextDown>App Store</TextDown>
+            </SectionTextGroup>
+          </SectionButtonAPP>
+        </Box>
       </SectionComingSoon>
     </StyledComponent>
   );
