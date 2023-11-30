@@ -46,10 +46,13 @@ const Partnerlist = () => {
             link="https://www.dexview.com"
           />
           {/* <CustomPartnerLogo image={imgLogoBlockSAFU} link="" /> */}
-          <CustomPartnerLogo image={imgLogoSolidProof} link="" />
+          <CustomPartnerLogo
+            image={imgLogoSolidProof}
+            link="https://app.solidproof.io/projects/flappy-bee?audit_id=815"
+          />
           <CustomPartnerLogo
             image={imgLogoBscscan}
-            link="https://bscscan.com/address/0x4592a5C47bab8bc11C29deD59bFeACeA71F24536"
+            link="https://bscscan.com/address/0x684eAfeb7E5be043842D892980695C68e15152b7#code"
           />
         </CustomMarquee>
       </SectionRoadmap>

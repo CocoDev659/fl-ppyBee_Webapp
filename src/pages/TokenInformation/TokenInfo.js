@@ -22,12 +22,12 @@ const TokenInfo = () => {
           <TextDescriptionEach>
             Contract Address : {"\u00a0"}
             <a
-              href="https://bscscan.com/address/0x4592a5C47bab8bc11C29deD59bFeACeA71F24536"
+              href="https://bscscan.com/address/0x684eAfeb7E5be043842D892980695C68e15152b7#code"
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "none", color: "white" }}
             >
-              0x4592...4536
+              0x684e...52b7
             </a>
           </TextDescriptionEach>
           <TextDescriptionEach>Contract Verified? : Yes</TextDescriptionEach>
@@ -56,7 +56,7 @@ const TokenInfo = () => {
             onClick={() => {
               // return NotificationManager.warning("Comming soon.", "", 3000);
               window.open(
-                "https://app.solidproof.io/projects/flappy-bee?audit_id=746"
+                "https://app.solidproof.io/projects/flappy-bee?audit_id=815"
               );
             }}
           >
