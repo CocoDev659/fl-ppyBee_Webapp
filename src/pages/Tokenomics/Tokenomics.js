@@ -20,10 +20,10 @@ const Tokenomics = () => {
         <SectionFarming>Farming: 15%</SectionFarming>
         <SectionEcosystem>Ecosystem: 5%</SectionEcosystem> */}
 
-        <SectionInfo>
+        <SectionInfo data-aos="fade-right" data-aos-duration="2000">
           <TextInfo>Fair-Launch: 67%</TextInfo>
         </SectionInfo>
-        <SectionInfo>
+        <SectionInfo data-aos="fade-left" data-aos-duration="2000">
           <TextInfo>Fair-Launch: 67%</TextInfo>
         </SectionInfo>
       </ImageBackground>
