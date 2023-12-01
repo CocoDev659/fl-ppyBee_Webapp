@@ -16,7 +16,7 @@ const TokenInfo = () => {
           <TextDescriptionEach>Token Symbol : BEET</TextDescriptionEach>
           <TextDescriptionEach>Token Decimal : 18</TextDescriptionEach>
           <TextDescriptionEach>
-            Total Supply : 100,000,000,000
+            Total Supply : 100,000,000,000,000
           </TextDescriptionEach>
           <TextDescriptionEach>Holder Count : 1</TextDescriptionEach>
           <TextDescriptionEach>
@@ -30,8 +30,8 @@ const TokenInfo = () => {
               0x684e...52b7
             </a>
           </TextDescriptionEach>
-          <TextDescriptionEach>Contract Verified? : Yes</TextDescriptionEach>
-          <TextDescriptionEach>Contract Type : ERC20</TextDescriptionEach>
+          <TextDescriptionEach>Contract Verified : Yes</TextDescriptionEach>
+          <TextDescriptionEach>Contract Type : BEP20</TextDescriptionEach>
         </SectionCenter>
       </SectionCard>
       <SectionAudit>
