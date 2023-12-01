@@ -8,13 +8,25 @@ const Tokenomics = () => {
       <TextSubject data-aos="zoom-in" data-aos-duration="1000">
         Tokenomics
       </TextSubject>
-      <ImageBackground data-aos="fade-up" data-aos-duration="2000">
-        <img src={imgTokenomics} width={"100%"} alt="" />
-        <SectionReward>Fair-Launch: 39%</SectionReward>
+      <ImageBackground>
+        {/* <img src={imgTokenomics} width={"100%"} alt="" /> */}
+        {/* <SectionReward>Fair-Launch: 39%</SectionReward>
         <SectionSupply>Game Reward: 20%</SectionSupply>
         <SectionLiquidity>Liquidity Pool: 21%</SectionLiquidity>
         <SectionFarming>Farming: 15%</SectionFarming>
-        <SectionEcosystem>Ecosystem: 5%</SectionEcosystem>
+        <SectionEcosystem>Ecosystem: 5%</SectionEcosystem> */}
+
+        <SectionInfo>
+          <TextInfo>Fair-Launch: 67%</TextInfo>
+        </SectionInfo>
+        <SectionInfo>
+          <TextInfo>Fair-Launch: 67%</TextInfo>
+        </SectionInfo>
+        <SectionInfo>
+          <TextInfo01>
+            No Taxes, No Bullshit, and contract ownership is renounced.
+          </TextInfo01>
+        </SectionInfo>
       </ImageBackground>
     </StyledComponent>
   );
@@ -31,7 +43,7 @@ const StyledComponent = styled(Box)`
     rgba(1, 73, 48, 0),
     rgba(1, 73, 48, 1)
   );
-  padding-bottom: 120px;
+  padding-bottom: 50px;
   box-sizing: border-box;
 
   transition: 0.3s;
@@ -67,292 +79,379 @@ const TextSubject = styled(Box)`
 `;
 
 const ImageBackground = styled(Box)`
-  display: flex;
-  position: relative;
+  display: grid;
   width: 100%;
+  height: 700px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-row-gap: 50px;
+  background-image: url(${imgTokenomics});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  > :nth-child(1) {
+  }
+  > :nth-child(2) {
+  }
+  > :nth-child(3) {
+    grid-column: 1/4;
+  }
+
+  @media (max-width: 1440px) {
+    height: 650px;
+  }
+  @media (max-width: 1024px) {
+    height: 600px;
+  }
+  @media (max-width: 768px) {
+    height: 500px;
+  }
+  @media (max-width: 500px) {
+    height: 450px;
+  }
+  @media (max-width: 390px) {
+    height: 400px;
+  }
 `;
 
-const SectionReward = styled(Box)`
+const SectionInfo = styled(Box)`
   display: flex;
-  position: absolute;
   justify-content: center;
   align-items: center;
-  width: 700px;
-  height: 120px;
+`;
+
+const TextInfo = styled(Box)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 25px 100px;
   border-radius: 12px;
   border: 2px solid #95b2a8;
-  background: rgba(7, 49, 34, 0.7);
+  background: rgba(7, 49, 34, 0.6);
   backdrop-filter: blur(5px);
   color: #fff;
   text-align: center;
-  font-size: 3em;
+  font-size: 3.5em;
   font-family: Lato;
   line-height: 40px;
-
-  left: 50%;
-  top: 10%;
-  transform: translateX(-50%);
   cursor: pointer;
   transition: 0.3s;
   &:hover {
     box-shadow: 0px 0px 20px white;
   }
 
-  transition: 0.3s;
-  @media (max-width: 1600px) {
-    width: 600px;
-    height: 100px;
-  }
   @media (max-width: 1440px) {
-    width: 530px;
-    height: 90px;
+    padding: 25px 70px;
   }
   @media (max-width: 1024px) {
-    width: 400px;
-    height: 70px;
+    padding: 20px 50px;
   }
   @media (max-width: 768px) {
-    width: 290px;
-    height: 50px;
-  }
-  @media (max-width: 600px) {
-    width: 230px;
-    height: 40px;
+    padding: 10px 30px;
   }
   @media (max-width: 500px) {
-    width: 150px;
-    height: 30px;
-    top: 8%;
+    padding: 5px 15px;
   }
-  @media (max-width: 350px) {
-    width: 120px;
-    height: 20px;
+  @media (max-width: 390px) {
+    padding: 0px 10px;
   }
 `;
 
-const SectionSupply = styled(Box)`
+const TextInfo01 = styled(Box)`
   display: flex;
-  position: absolute;
+  width: 80%;
   justify-content: center;
   align-items: center;
-  width: 550px;
-  height: 120px;
-  border-radius: 12px;
-  border: 2px solid #95b2a8;
-  background: rgba(7, 49, 34, 0.7);
-  backdrop-filter: blur(5px);
   color: #fff;
   text-align: center;
-  font-size: 3em;
+  font-size: 4em;
   font-family: Lato;
   line-height: 40px;
+  font-weight: 600;
+// `;
 
-  right: 60%;
-  top: 32%;
-  cursor: pointer;
-  transition: 0.3s;
-  &:hover {
-    box-shadow: 0px 0px 20px white;
-  }
+// const SectionReward = styled(Box)`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 700px;
+//   height: 120px;
+//   border-radius: 12px;
+//   border: 2px solid #95b2a8;
+//   background: rgba(7, 49, 34, 0.7);
+//   backdrop-filter: blur(5px);
+//   color: #fff;
+//   text-align: center;
+//   font-size: 3em;
+//   font-family: Lato;
+//   line-height: 40px;
 
-  transition: 0.3s;
-  @media (max-width: 1600px) {
-    width: 450px;
-    height: 100px;
-  }
-  @media (max-width: 1440px) {
-    width: 420px;
-    height: 90px;
-  }
-  @media (max-width: 1024px) {
-    width: 300px;
-    height: 70px;
-  }
-  @media (max-width: 768px) {
-    width: 230px;
-    height: 50px;
-  }
-  @media (max-width: 600px) {
-    width: 180px;
-    height: 40px;
-  }
-  @media (max-width: 500px) {
-    width: 130px;
-    height: 30px;
-  }
-  @media (max-width: 350px) {
-    width: 110px;
-    height: 20px;
-  }
-`;
+//   left: 50%;
+//   top: 10%;
+//   transform: translateX(-50%);
+//   cursor: pointer;
+//   transition: 0.3s;
+//   &:hover {
+//     box-shadow: 0px 0px 20px white;
+//   }
 
-const SectionLiquidity = styled(Box)`
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  width: 550px;
-  height: 120px;
-  border-radius: 12px;
-  border: 2px solid #95b2a8;
-  background: rgba(7, 49, 34, 0.7);
-  backdrop-filter: blur(5px);
-  color: #fff;
-  text-align: center;
-  font-size: 3em;
-  font-family: Lato;
-  line-height: 40px;
-  left: 60%;
-  top: 32%;
-  cursor: pointer;
-  transition: 0.3s;
-  &:hover {
-    box-shadow: 0px 0px 20px white;
-  }
+//   transition: 0.3s;
+//   @media (max-width: 1600px) {
+//     width: 600px;
+//     height: 100px;
+//   }
+//   @media (max-width: 1440px) {
+//     width: 530px;
+//     height: 90px;
+//   }
+//   @media (max-width: 1024px) {
+//     width: 400px;
+//     height: 70px;
+//   }
+//   @media (max-width: 768px) {
+//     width: 290px;
+//     height: 50px;
+//   }
+//   @media (max-width: 600px) {
+//     width: 230px;
+//     height: 40px;
+//   }
+//   @media (max-width: 500px) {
+//     width: 150px;
+//     height: 30px;
+//     top: 8%;
+//   }
+//   @media (max-width: 350px) {
+//     width: 120px;
+//     height: 20px;
+//   }
+// `;
 
-  transition: 0.3s;
-  @media (max-width: 1600px) {
-    width: 450px;
-    height: 100px;
-  }
-  @media (max-width: 1440px) {
-    width: 420px;
-    height: 90px;
-  }
-  @media (max-width: 1024px) {
-    width: 300px;
-    height: 70px;
-  }
-  @media (max-width: 768px) {
-    width: 230px;
-    height: 50px;
-  }
-  @media (max-width: 600px) {
-    width: 180px;
-    height: 40px;
-  }
-  @media (max-width: 500px) {
-    width: 130px;
-    height: 30px;
-  }
-  @media (max-width: 350px) {
-    width: 110px;
-    height: 20px;
-  }
-`;
+// const SectionSupply = styled(Box)`
+//   display: flex;
+//   position: absolute;
+//   justify-content: center;
+//   align-items: center;
+//   width: 550px;
+//   height: 120px;
+//   border-radius: 12px;
+//   border: 2px solid #95b2a8;
+//   background: rgba(7, 49, 34, 0.7);
+//   backdrop-filter: blur(5px);
+//   color: #fff;
+//   text-align: center;
+//   font-size: 3em;
+//   font-family: Lato;
+//   line-height: 40px;
 
-const SectionFarming = styled(Box)`
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  height: 120px;
-  border-radius: 12px;
-  border: 2px solid #95b2a8;
-  background: rgba(7, 49, 34, 0.7);
-  backdrop-filter: blur(5px);
-  color: #fff;
-  text-align: center;
-  font-size: 3em;
-  font-family: Lato;
-  line-height: 40px;
+//   right: 60%;
+//   top: 32%;
+//   cursor: pointer;
+//   transition: 0.3s;
+//   &:hover {
+//     box-shadow: 0px 0px 20px white;
+//   }
 
-  right: 63%;
-  top: 55%;
-  cursor: pointer;
-  transition: 0.3s;
-  &:hover {
-    box-shadow: 0px 0px 20px white;
-  }
+//   transition: 0.3s;
+//   @media (max-width: 1600px) {
+//     width: 450px;
+//     height: 100px;
+//   }
+//   @media (max-width: 1440px) {
+//     width: 420px;
+//     height: 90px;
+//   }
+//   @media (max-width: 1024px) {
+//     width: 300px;
+//     height: 70px;
+//   }
+//   @media (max-width: 768px) {
+//     width: 230px;
+//     height: 50px;
+//   }
+//   @media (max-width: 600px) {
+//     width: 180px;
+//     height: 40px;
+//   }
+//   @media (max-width: 500px) {
+//     width: 130px;
+//     height: 30px;
+//   }
+//   @media (max-width: 350px) {
+//     width: 110px;
+//     height: 20px;
+//   }
+// `;
 
-  transition: 0.3s;
-  @media (max-width: 1600px) {
-    width: 450px;
-    height: 100px;
-  }
-  @media (max-width: 1440px) {
-    width: 375px;
-    height: 90px;
-  }
-  @media (max-width: 1024px) {
-    width: 300px;
-    height: 70px;
-  }
-  @media (max-width: 768px) {
-    width: 200px;
-    height: 50px;
-  }
-  @media (max-width: 600px) {
-    width: 150px;
-    height: 40px;
-  }
-  @media (max-width: 500px) {
-    width: 120px;
-    height: 30px;
-    top: 53%;
-  }
-  @media (max-width: 350px) {
-    width: 100px;
-    height: 20px;
-  }
-`;
+// const SectionLiquidity = styled(Box)`
+//   display: flex;
+//   position: absolute;
+//   justify-content: center;
+//   align-items: center;
+//   width: 550px;
+//   height: 120px;
+//   border-radius: 12px;
+//   border: 2px solid #95b2a8;
+//   background: rgba(7, 49, 34, 0.7);
+//   backdrop-filter: blur(5px);
+//   color: #fff;
+//   text-align: center;
+//   font-size: 3em;
+//   font-family: Lato;
+//   line-height: 40px;
+//   left: 60%;
+//   top: 32%;
+//   cursor: pointer;
+//   transition: 0.3s;
+//   &:hover {
+//     box-shadow: 0px 0px 20px white;
+//   }
 
-const SectionEcosystem = styled(Box)`
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  height: 120px;
-  border-radius: 12px;
-  border: 2px solid #95b2a8;
-  background: rgba(7, 49, 34, 0.7);
-  backdrop-filter: blur(5px);
-  color: #fff;
-  text-align: center;
-  font-size: 3em;
-  font-family: Lato;
-  line-height: 40px;
+//   transition: 0.3s;
+//   @media (max-width: 1600px) {
+//     width: 450px;
+//     height: 100px;
+//   }
+//   @media (max-width: 1440px) {
+//     width: 420px;
+//     height: 90px;
+//   }
+//   @media (max-width: 1024px) {
+//     width: 300px;
+//     height: 70px;
+//   }
+//   @media (max-width: 768px) {
+//     width: 230px;
+//     height: 50px;
+//   }
+//   @media (max-width: 600px) {
+//     width: 180px;
+//     height: 40px;
+//   }
+//   @media (max-width: 500px) {
+//     width: 130px;
+//     height: 30px;
+//   }
+//   @media (max-width: 350px) {
+//     width: 110px;
+//     height: 20px;
+//   }
+// `;
 
-  left: 63%;
-  top: 55%;
-  cursor: pointer;
-  transition: 0.3s;
-  &:hover {
-    box-shadow: 0px 0px 20px white;
-  }
+// const SectionFarming = styled(Box)`
+//   display: flex;
+//   position: absolute;
+//   justify-content: center;
+//   align-items: center;
+//   width: 500px;
+//   height: 120px;
+//   border-radius: 12px;
+//   border: 2px solid #95b2a8;
+//   background: rgba(7, 49, 34, 0.7);
+//   backdrop-filter: blur(5px);
+//   color: #fff;
+//   text-align: center;
+//   font-size: 3em;
+//   font-family: Lato;
+//   line-height: 40px;
 
-  transition: 0.3s;
-  @media (max-width: 1600px) {
-    width: 450px;
-    height: 100px;
-  }
-  @media (max-width: 1440px) {
-    width: 375px;
-    height: 90px;
-  }
-  @media (max-width: 1024px) {
-    width: 300px;
-    height: 70px;
-  }
-  @media (max-width: 768px) {
-    width: 200px;
-    height: 50px;
-  }
-  @media (max-width: 600px) {
-    width: 150px;
-    height: 40px;
-  }
-  @media (max-width: 500px) {
-    width: 120px;
-    height: 30px;
-    top: 53%;
-  }
-  @media (max-width: 350px) {
-    width: 100px;
-    height: 20px;
-  }
-`;
+//   right: 63%;
+//   top: 55%;
+//   cursor: pointer;
+//   transition: 0.3s;
+//   &:hover {
+//     box-shadow: 0px 0px 20px white;
+//   }
+
+//   transition: 0.3s;
+//   @media (max-width: 1600px) {
+//     width: 450px;
+//     height: 100px;
+//   }
+//   @media (max-width: 1440px) {
+//     width: 375px;
+//     height: 90px;
+//   }
+//   @media (max-width: 1024px) {
+//     width: 300px;
+//     height: 70px;
+//   }
+//   @media (max-width: 768px) {
+//     width: 200px;
+//     height: 50px;
+//   }
+//   @media (max-width: 600px) {
+//     width: 150px;
+//     height: 40px;
+//   }
+//   @media (max-width: 500px) {
+//     width: 120px;
+//     height: 30px;
+//     top: 53%;
+//   }
+//   @media (max-width: 350px) {
+//     width: 100px;
+//     height: 20px;
+//   }
+// `;
+
+// const SectionEcosystem = styled(Box)`
+//   display: flex;
+//   position: absolute;
+//   justify-content: center;
+//   align-items: center;
+//   width: 500px;
+//   height: 120px;
+//   border-radius: 12px;
+//   border: 2px solid #95b2a8;
+//   background: rgba(7, 49, 34, 0.7);
+//   backdrop-filter: blur(5px);
+//   color: #fff;
+//   text-align: center;
+//   font-size: 3em;
+//   font-family: Lato;
+//   line-height: 40px;
+
+//   left: 63%;
+//   top: 55%;
+//   cursor: pointer;
+//   transition: 0.3s;
+//   &:hover {
+//     box-shadow: 0px 0px 20px white;
+//   }
+
+//   transition: 0.3s;
+//   @media (max-width: 1600px) {
+//     width: 450px;
+//     height: 100px;
+//   }
+//   @media (max-width: 1440px) {
+//     width: 375px;
+//     height: 90px;
+//   }
+//   @media (max-width: 1024px) {
+//     width: 300px;
+//     height: 70px;
+//   }
+//   @media (max-width: 768px) {
+//     width: 200px;
+//     height: 50px;
+//   }
+//   @media (max-width: 600px) {
+//     width: 150px;
+//     height: 40px;
+//   }
+//   @media (max-width: 500px) {
+//     width: 120px;
+//     height: 30px;
+//     top: 53%;
+//   }
+//   @media (max-width: 350px) {
+//     width: 100px;
+//     height: 20px;
+//   }
+// `;
 
 export default Tokenomics;

@@ -10,7 +10,7 @@ const TokenInfo = () => {
       <TextSubject data-aos="zoom-in" data-aos-duration="1000">
         Token Information
       </TextSubject>
-      <SectionCard data-aos="zoom-in" data-aos-duration="1000">
+      <SectionCard data-aos="fade-up" data-aos-duration="2000">
         <SectionCenter>
           <TextDescriptionEach>Token Name : FlappyBee</TextDescriptionEach>
           <TextDescriptionEach>Token Symbol : BEET</TextDescriptionEach>
@@ -22,7 +22,7 @@ const TokenInfo = () => {
           <TextDescriptionEach>
             Contract Address : {"\u00a0"}
             <a
-              href="https://bscscan.com/address/0x684eAfeb7E5be043842D892980695C68e15152b7#code"
+              href="https://bscscan.com/address/0x684eAfeb7E5be043842D892980695C68e15152b7"
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "none", color: "white" }}

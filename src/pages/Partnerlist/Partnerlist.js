@@ -24,7 +24,7 @@ const Partnerlist = () => {
       <TextSubjectDescription data-aos="zoom-in" data-aos-duration="1000">
         We partnered with leaders in the crypto industry
       </TextSubjectDescription>
-      <SectionRoadmap data-aos="zoom-in" data-aos-duration="1000">
+      <SectionRoadmap data-aos="fade-zoom-in" data-aos-duration="1000">
         <CustomMarquee
           // className="rfm-overlay"
           gradient={true}
@@ -52,7 +52,7 @@ const Partnerlist = () => {
           />
           <CustomPartnerLogo
             image={imgLogoBscscan}
-            link="https://bscscan.com/address/0x684eAfeb7E5be043842D892980695C68e15152b7#code"
+            link="https://bscscan.com/address/0x684eAfeb7E5be043842D892980695C68e15152b7"
           />
         </CustomMarquee>
       </SectionRoadmap>
