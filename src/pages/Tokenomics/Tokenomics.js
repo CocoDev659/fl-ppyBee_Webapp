@@ -24,7 +24,7 @@ const Tokenomics = () => {
           <TextInfo>Fair-Launch: 67%</TextInfo>
         </SectionInfo>
         <SectionInfo data-aos="fade-left" data-aos-duration="2000">
-          <TextInfo>Fair-Launch: 67%</TextInfo>
+          <TextInfo>Liquidity Pool: 33%</TextInfo>
         </SectionInfo>
       </ImageBackground>
     </StyledComponent>
