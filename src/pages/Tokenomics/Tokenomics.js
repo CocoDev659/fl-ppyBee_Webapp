@@ -8,6 +8,10 @@ const Tokenomics = () => {
       <TextSubject data-aos="zoom-in" data-aos-duration="1000">
         Tokenomics
       </TextSubject>
+      <TextSubjectDescription data-aos="zoom-in" data-aos-duration="1000">
+        No Taxes, No Bullshit, and contract ownership is renounced at the
+        launch.
+      </TextSubjectDescription>
       <ImageBackground>
         {/* <img src={imgTokenomics} width={"100%"} alt="" /> */}
         {/* <SectionReward>Fair-Launch: 39%</SectionReward>
@@ -21,11 +25,6 @@ const Tokenomics = () => {
         </SectionInfo>
         <SectionInfo>
           <TextInfo>Fair-Launch: 67%</TextInfo>
-        </SectionInfo>
-        <SectionInfo>
-          <TextInfo01>
-            No Taxes, No Bullshit, and contract ownership is renounced.
-          </TextInfo01>
         </SectionInfo>
       </ImageBackground>
     </StyledComponent>
@@ -78,13 +77,31 @@ const TextSubject = styled(Box)`
   /* line-height: 110px; */
 `;
 
+const TextSubjectDescription = styled(Box)`
+  width: 80%;
+  color: #fff;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 300;
+  font-family: Rowdies;
+  /* line-height: 110px; */
+  margin-top: 30px;
+
+  transition: 0.3s;
+  @media (max-width: 1024px) {
+    margin-top: 25px;
+  }
+  @media (max-width: 500px) {
+    margin-top: 20px;
+  }
+`;
+
 const ImageBackground = styled(Box)`
   display: grid;
   width: 100%;
-  height: 700px;
+  height: 500px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2fr 1fr;
-  grid-row-gap: 50px;
+  grid-template-rows: 1fr;
   background-image: url(${imgTokenomics});
   background-position: center;
   background-repeat: no-repeat;
@@ -98,19 +115,19 @@ const ImageBackground = styled(Box)`
   }
 
   @media (max-width: 1440px) {
-    height: 650px;
-  }
-  @media (max-width: 1024px) {
-    height: 600px;
-  }
-  @media (max-width: 768px) {
-    height: 500px;
-  }
-  @media (max-width: 500px) {
     height: 450px;
   }
-  @media (max-width: 390px) {
+  @media (max-width: 1024px) {
     height: 400px;
+  }
+  @media (max-width: 768px) {
+    height: 350px;
+  }
+  @media (max-width: 500px) {
+    height: 300px;
+  }
+  @media (max-width: 390px) {
+    height: 250px;
   }
 `;
 
@@ -170,7 +187,8 @@ const TextInfo01 = styled(Box)`
   font-family: Lato;
   line-height: 40px;
   font-weight: 600;
-// `;
+  //
+`;
 
 // const SectionReward = styled(Box)`
 //   display: flex;
