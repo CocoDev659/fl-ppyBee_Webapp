@@ -21,7 +21,7 @@ const StyledComponent = styled(Box)`
   justify-content: center;
   align-items: center;
   margin-right: 150px;
-  transition: 0.3s;
+  transition: 0.2s;
 
   cursor: pointer;
 
@@ -46,10 +46,8 @@ const StyledComponent = styled(Box)`
   }
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.25);
   }
-  &:active {
-    transform: scale(1);
-  }
+
 `;
 export default CustomPartnerLogo;
