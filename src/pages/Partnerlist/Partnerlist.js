@@ -10,8 +10,8 @@ import imgLogoONTO from "../../assets/images/partner/onto-logo.png";
 import imgLogoSafePal from "../../assets/images/partner/safepal-logo.png";
 // import imgLogoPinksale from "../../assets/images/partner/Pinksale logo.png";
 import imgLogoDexview from "../../assets/images/partner/DEXView.png";
-// import imgLogoBlockSAFU from "../../assets/images/partner1/blockSAFU.svg";
-import imgLogoSolidProof from "../../assets/images/partner/SolidProof.png";
+import imgLogoBlockSAFU from "../../assets/images/partner1/blockSAFU.svg";
+// import imgLogoSolidProof from "../../assets/images/partner/SolidProof.png";
 // import imgLogoEtherscan from "../../assets/images/partner/etherscan-logo.png";
 import imgLogoBscscan from "../../assets/images/partner/bscscan.png";
 
@@ -45,14 +45,23 @@ const Partnerlist = () => {
             image={imgLogoDexview}
             link="https://www.dexview.com"
           />
-          {/* <CustomPartnerLogo image={imgLogoBlockSAFU} link="" /> */}
-          <CustomPartnerLogo
+          {/* <CustomPartnerLogo
+            image={imgLogoBlockSAFU}
+            link={
+              "https://blocksafu.com/audit/" +
+              process.env.REACT_APP_ADDRESS_CONTRACT
+            }
+          /> */}
+          {/* <CustomPartnerLogo
             image={imgLogoSolidProof}
             link="https://app.solidproof.io/projects/flappy-bee?audit_id=815"
-          />
+          /> */}
           <CustomPartnerLogo
             image={imgLogoBscscan}
-            link="https://bscscan.com/address/0x684eAfeb7E5be043842D892980695C68e15152b7"
+            link={
+              "https://bscscan.com/token/" +
+              process.env.REACT_APP_ADDRESS_CONTRACT
+            }
           />
         </CustomMarquee>
       </SectionRoadmap>

@@ -9,8 +9,12 @@ const Tokenomics = () => {
         Tokenomics
       </TextSubject>
       <TextSubjectDescription data-aos="zoom-in" data-aos-duration="1000">
-        No Taxes, No Bullshit, and contract ownership is renounced at the
-        launch.
+        {/* No Taxes, No Bullshit, and contract ownership is renounced at the
+        launch. */}
+        The BEET token economy been designed to help BEET growing strongly with
+        a 7% tax fee for both buying and selling. The tax is divided as follows,
+        2% is automatically add liquidity, 2% is burnning fortifying project
+        stability. And, 3% of the tax is for marketing efforts.
       </TextSubjectDescription>
       <ImageBackground>
         {/* <img src={imgTokenomics} width={"100%"} alt="" /> */}
@@ -78,7 +82,7 @@ const TextSubject = styled(Box)`
 `;
 
 const TextSubjectDescription = styled(Box)`
-  width: 80%;
+  width: 75%;
   color: #fff;
   text-align: center;
   font-size: 3em;

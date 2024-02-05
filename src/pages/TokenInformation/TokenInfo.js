@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { Box } from "@mui/material";
-import imgSolidproof from "../../assets/images/icon/solidproof.png";
-// import imgBlockSafu from "../../assets/images/icon/blocksafu.png";
+// import imgSolidproof from "../../assets/images/icon/solidproof.png";
+import { shortAddress } from "../../libs/Functions";
+import imgBlockSafu from "../../assets/images/icon/blocksafu.png";
 // import { NotificationManager } from "react-notifications";
 
 const TokenInfo = () => {
@@ -12,22 +13,25 @@ const TokenInfo = () => {
       </TextSubject>
       <SectionCard data-aos="fade-up" data-aos-duration="2000">
         <SectionCenter>
-          <TextDescriptionEach>Token Name : FlappyBee</TextDescriptionEach>
+          <TextDescriptionEach>Token Name : Flappybee</TextDescriptionEach>
           <TextDescriptionEach>Token Symbol : BEET</TextDescriptionEach>
           <TextDescriptionEach>Token Decimal : 18</TextDescriptionEach>
           <TextDescriptionEach>
-            Total Supply : 100,000,000,000,000
+            Total Supply : 100,000,000,000,000 BEET
           </TextDescriptionEach>
           <TextDescriptionEach>Holder Count : 1</TextDescriptionEach>
           <TextDescriptionEach>
             Contract Address : {"\u00a0"}
             <a
-              href="https://bscscan.com/address/0x684eAfeb7E5be043842D892980695C68e15152b7"
+              href={
+                "https://bscscan.com/token/" +
+                process.env.REACT_APP_ADDRESS_CONTRACT
+              }
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "none", color: "white" }}
             >
-              0x684e...52b7
+              {shortAddress(process.env.REACT_APP_ADDRESS_CONTRACT)}
             </a>
           </TextDescriptionEach>
           <TextDescriptionEach>Contract Verified : Yes</TextDescriptionEach>
@@ -35,13 +39,14 @@ const TokenInfo = () => {
         </SectionCenter>
       </SectionCard>
       <SectionAudit>
-        {/* <Box display={"flex"} data-aos="fade-right" data-aos-duration="2000">
+        <Box display={"flex"} data-aos="fade-up" data-aos-duration="2000">
           <ButtonBlockSAFUAudit
             onClick={() => {
-              // window.open(
-              //   "https://blocksafu.com/audit/0x9E1f90970D6cbDdf193F418281612B7aF563985A"
-              //   // "_self"
-              // );
+              window.open(
+                "https://blocksafu.com/audit/" +
+                  process.env.REACT_APP_ADDRESS_CONTRACT
+                // "_self"
+              );
             }}
           >
             <IconAudit>
@@ -49,9 +54,9 @@ const TokenInfo = () => {
             </IconAudit>
             <TextBlockSAFUAudit>BlockSAFU Audit</TextBlockSAFUAudit>
           </ButtonBlockSAFUAudit>
-        </Box> */}
+        </Box>
 
-        <Box display={"flex"} data-aos="fade-up" data-aos-duration="2000">
+        {/* <Box display={"flex"} data-aos="fade-up" data-aos-duration="2000">
           <ButtonAudit
             onClick={() => {
               // return NotificationManager.warning("Comming soon.", "", 3000);
@@ -65,7 +70,7 @@ const TokenInfo = () => {
             </IconAudit>
             <TextAudit>Solidproof Audit</TextAudit>
           </ButtonAudit>
-        </Box>
+        </Box> */}
       </SectionAudit>
     </StyledComponent>
   );
@@ -192,65 +197,26 @@ const SectionAudit = styled(Box)`
   }
 `;
 
-const ButtonAudit = styled(Box)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  padding: 10px 30px;
-  border-radius: 35px;
-  background-color: #2b6acf;
-  color: #003d28;
-  cursor: pointer;
-  user-select: none;
-  font-size: 2.5rem;
-
-  &:hover {
-    box-shadow: 0px 0px 20px #2b6acf;
-  }
-  &:active {
-    transform: scale(0.95);
-  }
-  transition: 0.3s;
-  @media (max-width: 1440px) {
-    font-size: 2rem;
-  }
-  @media (max-width: 1024px) {
-    font-size: 1.5rem;
-    padding: 8px 25px;
-  }
-  @media (max-width: 768px) {
-    font-size: 1.2rem;
-    padding: 6px 20px;
-  }
-  @media (max-width: 600px) {
-    padding: unset;
-    width: 250px;
-    height: 50px;
-    margin-left: 0px;
-  }
-`;
-
-// const ButtonBlockSAFUAudit = styled(Box)`
+// const ButtonAudit = styled(Box)`
 //   display: flex;
 //   justify-content: center;
 //   align-items: center;
 //   font-weight: bold;
 //   padding: 10px 30px;
 //   border-radius: 35px;
-//   background-color: white;
+//   background-color: #2b6acf;
 //   color: #003d28;
 //   cursor: pointer;
 //   user-select: none;
 //   font-size: 2.5rem;
-//   transition: 0.3s;
 
 //   &:hover {
-//     box-shadow: 0px 0px 15px white;
+//     box-shadow: 0px 0px 20px #2b6acf;
 //   }
 //   &:active {
 //     transform: scale(0.95);
 //   }
+//   transition: 0.3s;
 //   @media (max-width: 1440px) {
 //     font-size: 2rem;
 //   }
@@ -264,11 +230,50 @@ const ButtonAudit = styled(Box)`
 //   }
 //   @media (max-width: 600px) {
 //     padding: unset;
-//     width: 200px;
-//     height: 40px;
-//     margin-top: 15px;
+//     width: 250px;
+//     height: 50px;
+//     margin-left: 0px;
 //   }
 // `;
+
+const ButtonBlockSAFUAudit = styled(Box)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 35px;
+  background-color: white;
+  color: #003d28;
+  cursor: pointer;
+  user-select: none;
+  font-size: 2.5rem;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0px 0px 15px white;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+  @media (max-width: 1440px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+    padding: 8px 25px;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+    padding: 6px 20px;
+  }
+  @media (max-width: 600px) {
+    padding: unset;
+    width: 200px;
+    height: 40px;
+    margin-top: 15px;
+  }
+`;
 
 const IconAudit = styled(Box)`
   display: flex;
@@ -291,29 +296,9 @@ const IconAudit = styled(Box)`
   }
 `;
 
-// const TextBlockSAFUAudit = styled(Box)`
-//   font-weight: bold;
-//   color: #0c325f;
-//   cursor: pointer;
-//   user-select: none;
-//   font-size: 2.5rem;
-//   transition: 0.3s;
-//   @media (max-width: 1440px) {
-//     font-size: 2rem;
-//   }
-//   @media (max-width: 1024px) {
-//     font-size: 1.5rem;
-//   }
-//   @media (max-width: 768px) {
-//     font-size: 1.2rem;
-//   }
-//   @media (max-width: 500px) {
-//   }
-// `;
-
-const TextAudit = styled(Box)`
+const TextBlockSAFUAudit = styled(Box)`
   font-weight: bold;
-  color: white;
+  color: #0c325f;
   cursor: pointer;
   user-select: none;
   font-size: 2.5rem;
@@ -330,5 +315,25 @@ const TextAudit = styled(Box)`
   @media (max-width: 500px) {
   }
 `;
+
+// const TextAudit = styled(Box)`
+//   font-weight: bold;
+//   color: white;
+//   cursor: pointer;
+//   user-select: none;
+//   font-size: 2.5rem;
+//   transition: 0.3s;
+//   @media (max-width: 1440px) {
+//     font-size: 2rem;
+//   }
+//   @media (max-width: 1024px) {
+//     font-size: 1.5rem;
+//   }
+//   @media (max-width: 768px) {
+//     font-size: 1.2rem;
+//   }
+//   @media (max-width: 500px) {
+//   }
+// `;
 
 export default TokenInfo;
